@@ -23,17 +23,18 @@ header {
     height: 90px;
 }
 
-.logosalate {
-    height: 50px;
-    margin: 2px 40px 3px 40px;
-}
-
 .nav-central {
     list-style: none;
 }
 
 .nav-laterales {
     list-style: none;
+}
+
+.nav-central img{
+    height: 50px;
+    margin: 2px 40px 3px 40px;
+    transition: 250ms;
 }
 
 .nav-laterales a {
@@ -48,6 +49,7 @@ header {
 
 .nav-laterales a:hover {
     color: #A1137C;
+    /* ! revisar por que en firefox se ve ligeramente diferente que en chrome, opera y brave */
     border-bottom: 1px solid #A1137C;
 }
 
@@ -425,6 +427,9 @@ section {
 }
 
 /* ------------------DINAMISMO---------------------------------------------------------------- */
+.nav-central img:hover{
+    scale: 130%;
+}
 /* FORMULARIO */
 /* input-div */
 .input-div input:focus+.input-label,
@@ -814,7 +819,6 @@ footer div ul {
 /*------------------------------------MEDIA-QUERY-----------------------------------------------*/
 @media screen and (max-width:1440px) {
 
-    /* contenido */
     .right-fusion-paragraph-div {
         flex-direction: column;
     }
@@ -841,7 +845,6 @@ footer div ul {
 
     .contact-section {
         width: 100%;
-        /* ! Revisar medidas de la imagen, se debe ajustar mejor */
         background-image: url(../img/salad-banner4.jpg);
     }
 
@@ -1010,9 +1013,11 @@ footer div ul {
         position: static;
         text-align: center;
     }
-
     .carusel {
         scale: 90%;
+    }
+    .title-div {
+        margin-top: 30px;
     }
 }
 
@@ -1191,6 +1196,9 @@ footer div ul {
     .hero-div h2 {
         font-size: 45px;
     }
+    .title-div {
+        margin-top: 40px;
+    }
 
     .title-div img {
         width: 70px;
@@ -1218,3 +1226,46 @@ footer div ul {
 
 
 }
+
+
+/*  IDEA DE DINAMISMO PARA IMAGENES
+.right-fusion-paragraph-div img{
+    
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: imagen-left;
+
+    animation-range: entry 5% cover 30%;
+    animation-fill-mode:both;
+}
+.left-fusion-paragraph-div img{
+    animation-name: imagen-right;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes imagen-left{
+    from {
+        opacity: 0;
+        transform: translatex(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes imagen-right{
+    0% {
+        opacity: 0;
+        transform: translatex(350px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+} */
