@@ -8,7 +8,7 @@ El proyecto ha sido realizado como proyecto integrador para el curso "Desarrollo
 
 
 
-![Logo](https://i.ibb.co/4ft427X/logosalatetransparente.png)
+![Logo](https://raw.githubusercontent.com/AlexisBazila/Salate/main/img/logosalatetransparente.png)
 
 
 ## Authors
