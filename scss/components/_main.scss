@@ -1,0 +1,195 @@
+// GENERALES
+
+// INDEX    
+.index-main {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "hero hero hero"
+        ". que-es ."
+        ". proyectate ."
+        ". variedad .";
+
+    .hero {
+        grid-area: hero;
+
+        .hero-div {
+            padding-left: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .cel-index-img {
+                position: absolute;
+                visibility: hidden;
+                width: 50%;
+            }
+
+            div {
+                h1 {
+                    font-family: Mulish;
+                    font-size: 50px;
+                    font-weight: 200;
+                    color: #A1137C;
+                }
+
+                h2 {
+                    font-family: Bilbo;
+                    font-weight: 400;
+                    font-size: 70px;
+                }
+            }
+
+            .web-index-img {
+                width: 50%;
+            }
+        }
+    }
+
+    section {
+        .title-div {
+            text-align: center;
+            padding: 30px;
+
+            img {}
+
+            h2 {
+                text-align: center;
+                font-family: Merriweather;
+                font-size: 30px;
+                font-weight: 200;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: Mulish;
+                font-size: 30px;
+                font-weight: 200;
+                margin-bottom: 30px;
+                color: #F26D1F;
+            }
+        }
+    }
+
+    #que-es {
+        grid-area: que-es;
+        .right-fusion-paragraph-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 60%;
+            }
+
+            div {
+                text-align: center;
+
+                p {
+                    font-family: Mulish;
+                    font-size: 19px;
+                    margin: 50px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+
+    #proyectate {
+        grid-area: proyectate;
+
+        .left-fusion-paragraph-div {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 60%;
+            }
+
+            div {
+                text-align: center;
+
+                p {
+                    font-family: Mulish;
+                    font-size: 19px;
+                    margin: 50px;
+                    text-align: left;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: Mulish;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 4%;
+                    color: white;
+                    background-color: #2ba013;
+                    border-radius: 30px;
+                    transition: 300ms;
+                    border: 2px solid #2ba013;
+                    &:hover {
+                        background: white;
+                        color: #2ba013;
+                    }
+                }
+            }
+        }
+    }
+
+    #variedad {
+        grid-area: variedad;
+        .product-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                margin: 30px;
+                box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+                width: 364px;
+                transition: 250ms;
+
+                &:hover {
+                    scale: 110%;
+                    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.2);
+                }
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        margin-bottom: 4px;
+                        width: 100%;
+                    }
+
+                    h4 {
+                        text-decoration: none;
+                        font-family: Mulish;
+                        font-weight: 500;
+                        font-size: 20px;
+                        margin-left: 10px;
+                        color: black;
+                    }
+
+                    p {
+                        text-decoration: none;
+                        font-family: Mulish;
+                        font-weight: 200;
+                        font-size: 15px;
+                        margin-left: 10px;
+                        color: rgb(122, 135, 127);
+                        width: 320px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

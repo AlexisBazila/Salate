@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Merriweather:ital@0;1&family=Mulish:wght@200;300;500&family=Signika+Negative:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+.carousel-control-next-icon {
+    background-color: $color-primario;
+}
+
+.bxl-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.bxl-facebook {
+    background: #3b5998;
+}
+
+.bxl-whatsapp {
+    background: #00e676;
+}
+
+.bx-phone-call,
+.bx-envelope,
+.bx-map-pin {
+    color: #A1137C;
+}  

@@ -1,0 +1,10 @@
+@media screen and (max-width:950px) {
+    header{
+        .web-navbar {
+            display: none;
+        }
+        .celular-navbar {
+            display: block;
+        }
+    }
+}

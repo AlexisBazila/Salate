@@ -1,0 +1,119 @@
+footer{
+    background: linear-gradient(#2ba01391,#2ba01391), url("../img/vectorlechuga.jpg");
+    box-shadow: 0 -2px 20px 1px #00000079;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    .box-footer-div{
+        width: 70%;
+        .content-footer-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+            margin-bottom: 50px;
+            border-bottom: 5px solid #A1137C;
+            div{
+                ul{
+                    list-style: none;
+                    .title-footer-li{
+                        margin-bottom: 20px;
+                        a{
+                            text-decoration: none;
+                            font-family: Mulish;
+                            font-weight: 500;
+                            font-size: 30px;
+                            color: #fff;
+                            border-bottom: 2px solid #fff;
+                            transition: 250ms;
+                            &:hover {
+                                color: #A1137C;
+                                border-bottom: 2px solid #A1137C;
+                            }
+                        }
+                    }
+                    .item-footer-li{
+                        margin-bottom: 10px;
+                        a{
+                            text-decoration: none;
+                            font-family: Mulish;
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #fff;
+                            &:hover {
+                                transition: color 0.5s;
+                                color: #A1137C;
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                div{
+                    ul{
+                        .title-footer-li{
+                            a{
+                                text-decoration: none;
+                                font-family: Mulish;
+                                font-weight: 500;
+                                font-size: 30px;
+                                color: #fff;
+                                border-bottom: 2px solid #fff;
+                                transition: 250ms;
+                                &:hover {
+                                    color: #A1137C;
+                                    border-bottom: 2px solid #A1137C;
+                                }
+                            }
+                        }
+                        li{
+                            p{
+                                font-family: Mulish;
+                                font-weight: 500;
+                                font-size: 25px;
+                                margin-bottom: 5px;
+                                color: #fff;
+                                i{
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .media-footer-div{
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        li{
+                            a{
+                                i{
+                                    margin: 10px 35px 10px 0;
+                                    font-size: 40px;
+                                    border-radius: 30px;
+                                    padding: 5px;
+                                    color: white;
+                                    transition: 250ms;
+                                    &:hover {
+                                        scale: 120%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copy-footer-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            img{
+                width: 30%;
+            }
+            p{
+                margin-top: 10px;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -683,21 +683,19 @@ section {
 
 /*!-------------------------------------------------FOOTER------------------------------------- */
 footer {
-    background-image: url("../img/vectorlechuga.jpg");
+    background: linear-gradient(#2ba01391,#2ba01391), url("../img/vectorlechuga.jpg");
     box-shadow: 0 -2px 20px 1px #00000079;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 footer div ul {
     list-style: none;
 }
 
-.footer-div {
-    background-color: #2ba01391;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
+
 
 .box-footer-div {
     width: 70%;
@@ -716,9 +714,6 @@ footer div ul {
     margin-bottom: 20px;
 }
 
-.content-footer-div div ul li a img {
-    width: 30px;
-}
 
 .title-footer-li a {
     text-decoration: none;
@@ -788,10 +783,6 @@ footer div ul {
     background: #3b5998;
 }
 
-.media-footer-div ul {
-    display: flex;
-}
-
 .bxl-whatsapp {
     background: #00e676;
 }
@@ -802,6 +793,9 @@ footer div ul {
     color: #A1137C;
 }
 
+.media-footer-div ul {
+    display: flex;
+}
 /*todo---------copy-footer-div------------------------------------------------------------------*/
 .copy-footer-div {
     display: flex;
