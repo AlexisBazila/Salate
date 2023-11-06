@@ -30,7 +30,7 @@ header {
   box-shadow: 2px 2px 10px 1px #0000009d; }
   header .celular-navbar {
     background-color: #2ba013;
-    color: white;
+    color: #fff;
     height: 70px;
     padding: 10px 12px;
     display: none; }
@@ -73,9 +73,9 @@ header {
         list-style: none; }
         header .celular-navbar ul li a {
           text-align: center;
-          background-color: #2ba0138e;
+          background-color: #2ba013ec;
           text-decoration: none;
-          color: white;
+          color: #fff;
           display: block;
           padding: 10px; }
           header .celular-navbar ul li a:hover {
@@ -98,7 +98,7 @@ header {
           font-family: Mulish;
           font-weight: 500;
           font-size: 20px;
-          color: white;
+          color: #fff;
           transition: 250ms;
           padding-bottom: 10px;
           margin-right: 30px; }
@@ -117,7 +117,7 @@ header {
           font-family: Mulish;
           font-weight: 500;
           font-size: 20px;
-          color: white;
+          color: #fff;
           transition: 250ms;
           padding-bottom: 10px;
           padding-left: 30px; }

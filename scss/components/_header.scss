@@ -3,10 +3,10 @@ header{
     width: 100%;
     background-color: $color-primario-transparente;
     z-index: 1;
-    box-shadow: 2px 2px 10px 1px #0000009d;
+    box-shadow: 2px 2px 10px 1px $color-sombra;
     .celular-navbar{
         background-color: $color-primario;
-        color: white;
+        color: $color-blanco;
         height: 70px;
         padding: 10px 12px;
         display: none;
@@ -55,13 +55,13 @@ header{
                 list-style: none;
                 a{
                     text-align: center;
-                    background-color: #2ba0138e;
+                    background-color: $color-primario-transparente;
                     text-decoration: none;
-                    color: white;
+                    color: $color-blanco;
                     display: block;
                     padding: 10px;
                     &:hover {
-                        background-color: #A1137C;
+                        background-color: $color-secundario;
                     }
                 }
             }
@@ -86,14 +86,14 @@ header{
                         font-family: Mulish;
                         font-weight: 500;
                         font-size: 20px;
-                        color: white;
+                        color: $color-blanco;
                         transition: 250ms;
                         padding-bottom: 10px;
                         margin-right: 30px;
                         &:hover {
-                            color: #A1137C;
+                            color: $color-secundario;
                             /* ! revisar por que en firefox se ve ligeramente diferente que en chrome, opera y brave */
-                            border-bottom: 1px solid #A1137C;
+                            border-bottom: 1px solid $color-secundario;
                         }
                     }
                 }
@@ -109,14 +109,14 @@ header{
                         font-family: Mulish;
                         font-weight: 500;
                         font-size: 20px;
-                        color: white;
+                        color: $color-blanco;
                         transition: 250ms;
                         padding-bottom: 10px;
                         padding-left: 30px;
                         &:hover {
-                            color: #A1137C;
+                            color: $color-secundario;
                             /* ! revisar por que en firefox se ve ligeramente diferente que en chrome, opera y brave */
-                            border-bottom: 1px solid #A1137C;
+                            border-bottom: 1px solid $color-secundario;
                         }
                     }
                 }
