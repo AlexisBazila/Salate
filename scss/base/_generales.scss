@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
-.carousel-control-next-icon {
-    background-color: $color-primario;
+section {
+    margin-bottom: 100px;
 }
+
 
 .bxl-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -27,3 +28,19 @@
 .bx-map-pin {
     color: #A1137C;
 }  
+
+.carousel-control-prev-icon {
+    background-color: #2ba013;
+}
+
+.carousel-control-next-icon {
+    background-color: #2ba013
+}
+
+.carousel-item-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 10% 2% 10%;
+    text-align: center;
+}

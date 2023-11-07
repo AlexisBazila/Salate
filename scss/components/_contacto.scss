@@ -1,0 +1,162 @@
+main{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "contacto contacto contacto"
+        "mapa mapa mapa"
+        ". comercios .";
+    section {
+        .title-div {
+            text-align: center;
+            padding: 30px;
+
+            img {}
+
+            h2 {
+                text-align: center;
+                font-family: Merriweather;
+                font-size: 30px;
+                font-weight: 200;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: Mulish;
+                font-size: 30px;
+                font-weight: 200;
+                margin-bottom: 30px;
+                color: #F26D1F;
+            }
+        }
+    }
+    .contact-section{
+        background-image: url("../img/salad-banner3.jpg");
+        background-size: cover;
+        padding: 5%;
+        grid-area: contacto;
+        div{
+            form{
+                position: relative;
+                left: 10%;
+                font-weight: 200;
+                h4{
+                    font-family: Merriweather;
+                    margin-bottom: 7px;
+                }
+                .input-div{
+                    position: relative;
+                    margin: 15px;
+                    input{
+                        font: inherit;
+                        color: black;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 4px;
+                        outline: 2px solid black;
+                        background-color: transparent;
+                        transition: outline-color 500ms;
+                        width: 450px;
+                        &:focus+.input-label,
+                        &:valid+.input-label {
+                            padding-inline: 5px;
+                            translate: 10px -10px;
+                            scale: 0.8;
+                            background-color: white;
+                            color: #2ba013;
+                            font-weight: 700;
+                        }
+                        &:is(:focus, :valid) {
+                            border: 5px solid #2ba013;
+                        }                        
+                    }
+                    label{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        translate: 10px 10px;
+                        color: black;
+                        transition: translate 500ms, scale 500ms;
+                    }
+                }
+                .textarea-div{
+                    position: relative;
+                    margin: 15px;
+                    textarea{
+                        font: inherit;
+                        color: black;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 4px;
+                        outline: 2px double black;
+                        background-color: transparent;
+                        transition: outline-color 500ms;
+                        width: 450px;
+                        &:focus+.textarea-label,
+                        &:valid+.textarea-label {
+                            padding-inline: 5px;
+                            translate: 10px -10px;
+                            scale: 0.8;
+                            background-color: white;
+                            color: #2ba013;
+                            font-weight: 700;
+                        }
+                        
+                        &:is(:focus, :valid) {
+                            border: 5px solid #2ba013;
+                        }                      
+                    }
+                    label{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        translate: 10px 10px;
+                        color: black;
+                        transition: translate 500ms, scale 500ms;
+                    }
+                }
+                button{
+                    text-decoration: none;
+                    font-family: Mulish;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 15px;
+                    color: white;
+                    background-color: #2ba013;
+                    border-radius: 30px;
+                    transition: 300ms;
+                    border: 2px solid #2ba013;
+                    &:hover {
+                        background: white;
+                        color: #2ba013;
+                    }
+                }
+            }
+        }
+    }
+
+    .map-section{
+        div{
+            background-color: white;
+        }
+        grid-area: mapa;
+        background-image: url("../img/fondo-verduras.jpg");
+        margin-bottom: 50px;
+        iframe{
+            box-shadow: 5px 5px 10px 1px #0000008c;
+        }
+    }
+
+    .comercios-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: comercios;
+        .carousel-comercios-div {
+            max-width: 40%;
+        }
+    }
+}
