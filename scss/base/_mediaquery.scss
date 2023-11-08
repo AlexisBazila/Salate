@@ -1,10 +1,112 @@
-@media screen and (max-width:950px) {
-    header{
-        .web-navbar {
-            display: none;
+@media screen and (max-width:1440px) {
+    .index-main {
+
+        .hero {
+    
+            .hero-div {
+    
+                .cel-index-img {
+
+                }
+    
+                div {
+                    h1 {
+                        font-size: 40px;
+                    }
+    
+                    h2 {
+                        font-size: 60px;
+                    }
+                }
+    
+                .web-index-img {
+
+                }
+            }
         }
-        .celular-navbar {
-            display: block;
+    
+        section {
+            .title-div {
+
+    
+                img {}
+    
+                h2 {
+
+                }
+    
+                h3 {
+
+                }
+            }
+        }
+    
+        #que-es {
+            .right-fusion-paragraph-div {
+                flex-direction: column; 
+                div {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    
+        #proyectate {
+            .left-fusion-paragraph-div {
+                flex-direction: column;
+                img {
+                    max-width: 60%;
+                }
+    
+                div {
+
+    
+                    p {
+                        text-align: center;
+                    }
+    
+                    a {
+
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+        }
+    
+        #variedad {
+
+            .product-div {
+
+    
+                div {
+                    margin: 10px;
+                    width: 300px;
+    
+                    &:hover {
+
+                    }
+    
+                    a {
+                        
+    
+                        img {
+       
+                        }
+    
+                        h4 {
+
+                        }
+    
+                        p {
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
+

@@ -295,6 +295,42 @@ header {
             width: 320px;
             margin-bottom: 10px; }
 
+@media screen and (max-width: 1440px) {
+  /* BLOQUES */
+  .contact-section {
+    width: 100%;
+    background-image: url(../img/salad-banner4.jpg); }
+  .left-product-div {
+    flex-direction: column;
+    align-items: center; }
+  .right-product-div {
+    flex-direction: column; }
+  /* CONTENIDO */
+  .left-product-div h3 {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    width: 100%; }
+  .right-product-div h3 {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    width: 100%; }
+  .left-product-div h2 {
+    text-align: center;
+    width: 100%; }
+  .right-product-div h2 {
+    text-align: center;
+    width: 100%; }
+  .title-footer-li a {
+    font-size: 26px; }
+  .item-footer-li a {
+    font-size: 20px; }
+  .content-footer-div div ul li p {
+    font-size: 20px; } }
+
 .contacto-main {
   display: grid;
   grid-template-columns: 15% 70% 15%;
@@ -751,8 +787,21 @@ footer {
         margin-top: 10px;
         color: #fff; }
 
-@media screen and (max-width: 950px) {
-  header .web-navbar {
-    display: none; }
-  header .celular-navbar {
-    display: block; } }
+@media screen and (max-width: 1440px) {
+  .index-main .hero .hero-div div h1 {
+    font-size: 40px; }
+  .index-main .hero .hero-div div h2 {
+    font-size: 60px; }
+  .index-main #que-es .right-fusion-paragraph-div {
+    flex-direction: column; }
+    .index-main #que-es .right-fusion-paragraph-div div p {
+      text-align: center; }
+  .index-main #proyectate .left-fusion-paragraph-div {
+    flex-direction: column; }
+    .index-main #proyectate .left-fusion-paragraph-div img {
+      max-width: 60%; }
+    .index-main #proyectate .left-fusion-paragraph-div div p {
+      text-align: center; }
+  .index-main #variedad .product-div div {
+    margin: 10px;
+    width: 300px; } }
