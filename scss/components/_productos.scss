@@ -1,0 +1,108 @@
+.productos-main{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "hero hero hero"
+        ". product .";
+    .hero {
+        grid-area: hero;
+
+        .hero-div {
+            padding-left: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .cel-index-img {
+                position: absolute;
+                visibility: hidden;
+                width: 50%;
+            }
+
+            div {
+                h1 {
+                    font-family: Mulish;
+                    font-size: 50px;
+                    font-weight: 200;
+                    color: #A1137C;
+                }
+
+                h2 {
+                    font-family: Bilbo;
+                    font-weight: 400;
+                    font-size: 70px;
+                }
+            }
+
+            .web-index-img {
+                width: 50%;
+            }
+        }
+    }
+
+   
+
+        .product-section{
+            grid-area: product;
+            .left-product-div{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 70px;
+                div{
+                    h2{
+                        font-family: Mulish;
+                        font-size: 20px;
+                        font-weight: 200;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    h3{
+                        font-family: Merriweather;
+                        font-size: 17px;
+                        font-weight: 200;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-left: 30px;
+                        width: 400px;
+                        color: #7a877f;
+                    }
+                    .carusel{
+                        
+                    }
+                }
+            }
+            .right-product-div{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 70px;
+                div{
+                    h2{
+                        font-family: Mulish;
+                        font-size: 20px;
+                        font-weight: 200;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    h3{
+                        font-family: Merriweather;
+                        font-size: 17px;
+                        font-weight: 200;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-left: 30px;
+                        width: 400px;
+                        color: #7a877f;
+                    }
+                    .carusel{
+                        
+                    }
+                }
+            }
+        }
+    }
+

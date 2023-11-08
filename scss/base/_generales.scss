@@ -29,6 +29,10 @@ section {
     color: #A1137C;
 }  
 
+.card-body {
+    margin: 5%;
+}
+
 .carousel-control-prev-icon {
     background-color: #2ba013;
 }
@@ -43,4 +47,26 @@ section {
     align-items: center;
     padding: 2% 10% 2% 10%;
     text-align: center;
+}
+
+.boton {
+    text-decoration: none;
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 4%;
+    color: white;
+    background-color: #2ba013;
+    border-radius: 30px;
+    transition: 300ms;
+    border: 2px solid #2ba013;
+    &:hover {
+        background: white;
+        color: #2ba013;
+    }
+}
+
+.card{
+    width: 239px;
+    height: 400px;
 }

@@ -22,6 +22,9 @@ section {
 .bx-map-pin {
   color: #A1137C; }
 
+.card-body {
+  margin: 5%; }
+
 .carousel-control-prev-icon {
   background-color: #2ba013; }
 
@@ -34,6 +37,25 @@ section {
   align-items: center;
   padding: 2% 10% 2% 10%;
   text-align: center; }
+
+.boton {
+  text-decoration: none;
+  font-family: Mulish;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 4%;
+  color: white;
+  background-color: #2ba013;
+  border-radius: 30px;
+  transition: 300ms;
+  border: 2px solid #2ba013; }
+  .boton:hover {
+    background: white;
+    color: #2ba013; }
+
+.card {
+  width: 239px;
+  height: 400px; }
 
 header {
   position: fixed;
@@ -273,44 +295,44 @@ header {
             width: 320px;
             margin-bottom: 10px; }
 
-main {
+.contacto-main {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "contacto contacto contacto" "mapa mapa mapa" ". comercios ."; }
-  main section .title-div {
+  .contacto-main section .title-div {
     text-align: center;
     padding: 30px; }
-    main section .title-div h2 {
+    .contacto-main section .title-div h2 {
       text-align: center;
       font-family: Merriweather;
       font-size: 30px;
       font-weight: 200;
       margin-top: 10px;
       margin-bottom: 20px; }
-    main section .title-div h3 {
+    .contacto-main section .title-div h3 {
       text-align: center;
       font-family: Mulish;
       font-size: 30px;
       font-weight: 200;
       margin-bottom: 30px;
       color: #F26D1F; }
-  main .contact-section {
+  .contacto-main .contact-section {
     background-image: url("../img/salad-banner3.jpg");
     background-size: cover;
     padding: 5%;
     grid-area: contacto; }
-    main .contact-section div form {
+    .contacto-main .contact-section div form {
       position: relative;
       left: 10%;
       font-weight: 200; }
-      main .contact-section div form h4 {
+      .contacto-main .contact-section div form h4 {
         font-family: Merriweather;
         margin-bottom: 7px; }
-      main .contact-section div form .input-div {
+      .contacto-main .contact-section div form .input-div {
         position: relative;
         margin: 15px; }
-        main .contact-section div form .input-div input {
+        .contacto-main .contact-section div form .input-div input {
           font: inherit;
           color: black;
           padding: 10px;
@@ -320,27 +342,27 @@ main {
           background-color: transparent;
           transition: outline-color 500ms;
           width: 450px; }
-          main .contact-section div form .input-div input:focus + .input-label,
-          main .contact-section div form .input-div input:valid + .input-label {
+          .contacto-main .contact-section div form .input-div input:focus + .input-label,
+          .contacto-main .contact-section div form .input-div input:valid + .input-label {
             padding-inline: 5px;
             translate: 10px -10px;
             scale: 0.8;
             background-color: white;
             color: #2ba013;
             font-weight: 700; }
-          main .contact-section div form .input-div input:is(:focus, :valid) {
+          .contacto-main .contact-section div form .input-div input:is(:focus, :valid) {
             border: 5px solid #2ba013; }
-        main .contact-section div form .input-div label {
+        .contacto-main .contact-section div form .input-div label {
           position: absolute;
           top: 0;
           left: 0;
           translate: 10px 10px;
           color: black;
           transition: translate 500ms, scale 500ms; }
-      main .contact-section div form .textarea-div {
+      .contacto-main .contact-section div form .textarea-div {
         position: relative;
         margin: 15px; }
-        main .contact-section div form .textarea-div textarea {
+        .contacto-main .contact-section div form .textarea-div textarea {
           font: inherit;
           color: black;
           padding: 10px;
@@ -350,24 +372,24 @@ main {
           background-color: transparent;
           transition: outline-color 500ms;
           width: 450px; }
-          main .contact-section div form .textarea-div textarea:focus + .textarea-label,
-          main .contact-section div form .textarea-div textarea:valid + .textarea-label {
+          .contacto-main .contact-section div form .textarea-div textarea:focus + .textarea-label,
+          .contacto-main .contact-section div form .textarea-div textarea:valid + .textarea-label {
             padding-inline: 5px;
             translate: 10px -10px;
             scale: 0.8;
             background-color: white;
             color: #2ba013;
             font-weight: 700; }
-          main .contact-section div form .textarea-div textarea:is(:focus, :valid) {
+          .contacto-main .contact-section div form .textarea-div textarea:is(:focus, :valid) {
             border: 5px solid #2ba013; }
-        main .contact-section div form .textarea-div label {
+        .contacto-main .contact-section div form .textarea-div label {
           position: absolute;
           top: 0;
           left: 0;
           translate: 10px 10px;
           color: black;
           transition: translate 500ms, scale 500ms; }
-      main .contact-section div form button {
+      .contacto-main .contact-section div form button {
         text-decoration: none;
         font-family: Mulish;
         font-weight: 500;
@@ -378,101 +400,101 @@ main {
         border-radius: 30px;
         transition: 300ms;
         border: 2px solid #2ba013; }
-        main .contact-section div form button:hover {
+        .contacto-main .contact-section div form button:hover {
           background: white;
           color: #2ba013; }
-  main .map-section {
+  .contacto-main .map-section {
     grid-area: mapa;
     background-image: url("../img/fondo-verduras.jpg");
     margin-bottom: 50px; }
-    main .map-section div {
+    .contacto-main .map-section div {
       background-color: white; }
-    main .map-section iframe {
+    .contacto-main .map-section iframe {
       box-shadow: 5px 5px 10px 1px #0000008c; }
-  main .comercios-section {
+  .contacto-main .comercios-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: comercios; }
-    main .comercios-section .carousel-comercios-div {
+    .contacto-main .comercios-section .carousel-comercios-div {
       max-width: 40%; }
 
-main {
+.nosotros-main {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "hero hero hero" ". historia ." "equipo equipo equipo" ". pip ."; }
-  main section .title-div {
+  .nosotros-main section .title-div {
     text-align: center;
     padding: 30px; }
-    main section .title-div h2 {
+    .nosotros-main section .title-div h2 {
       text-align: center;
       font-family: Merriweather;
       font-size: 30px;
       font-weight: 200;
       margin-top: 10px;
       margin-bottom: 20px; }
-    main section .title-div h3 {
+    .nosotros-main section .title-div h3 {
       text-align: center;
       font-family: Mulish;
       font-size: 30px;
       font-weight: 200;
       margin-bottom: 30px;
       color: #F26D1F; }
-  main .hero {
+  .nosotros-main .hero {
     grid-area: hero; }
-    main .hero .hero-div {
+    .nosotros-main .hero .hero-div {
       padding-left: 15%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 50px; }
-      main .hero .hero-div .cel-index-img {
+      .nosotros-main .hero .hero-div .cel-index-img {
         position: absolute;
         visibility: hidden;
         width: 50%; }
-      main .hero .hero-div div h1 {
+      .nosotros-main .hero .hero-div div h1 {
         font-family: Mulish;
         font-size: 50px;
         font-weight: 200;
         color: #A1137C; }
-      main .hero .hero-div div h2 {
+      .nosotros-main .hero .hero-div div h2 {
         font-family: Bilbo;
         font-weight: 400;
         font-size: 70px; }
-      main .hero .hero-div .web-index-img {
+      .nosotros-main .hero .hero-div .web-index-img {
         width: 50%; }
-  main #historia {
+  .nosotros-main #historia {
     grid-area: historia; }
-    main #historia div {
+    .nosotros-main #historia div {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 30px;
       margin-bottom: 30px; }
-      main #historia div p {
+      .nosotros-main #historia div p {
         text-align: center;
         font-family: Mulish;
         font-size: 20px;
         margin-bottom: 10px; }
-  main #equipo {
+  .nosotros-main #equipo {
     grid-area: equipo; }
-    main #equipo .large-content-div {
+    .nosotros-main #equipo .large-content-div {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-image: url("../img/fondo-verduras.jpg");
       padding-bottom: 100px; }
-      main #equipo .large-content-div div {
+      .nosotros-main #equipo .large-content-div div {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 70%; }
-        main #equipo .large-content-div div img {
+        .nosotros-main #equipo .large-content-div div img {
           max-width: 60%;
           box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.8); }
-        main #equipo .large-content-div div div p {
+        .nosotros-main #equipo .large-content-div div div p {
           text-decoration: none;
           font-family: Mulish;
           font-weight: 500;
@@ -484,96 +506,168 @@ main {
           position: relative;
           left: -30%;
           box-shadow: 5px 5px 10px 1px #0000008c; }
-  main .pip-section {
+  .nosotros-main .pip-section {
     grid-area: pip; }
-    main .pip-section div {
+    .nosotros-main .pip-section div {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 30px;
       margin-bottom: 30px; }
-      main .pip-section div p {
+      .nosotros-main .pip-section div p {
         text-align: center;
         font-family: Mulish;
         font-size: 20px;
         margin-bottom: 10px; }
 
-main {
+.procesos-main {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "hero hero hero" ". elaboracion ." ". matprima ."; }
-  main .hero {
+  .procesos-main .hero {
     grid-area: hero; }
-    main .hero .hero-div {
+    .procesos-main .hero .hero-div {
       padding-left: 15%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 50px; }
-      main .hero .hero-div .cel-index-img {
+      .procesos-main .hero .hero-div .cel-index-img {
         position: absolute;
         visibility: hidden;
         width: 50%; }
-      main .hero .hero-div div h1 {
+      .procesos-main .hero .hero-div div h1 {
         font-family: Mulish;
         font-size: 50px;
         font-weight: 200;
         color: #A1137C; }
-      main .hero .hero-div div h2 {
+      .procesos-main .hero .hero-div div h2 {
         font-family: Bilbo;
         font-weight: 400;
         font-size: 70px; }
-      main .hero .hero-div .web-index-img {
+      .procesos-main .hero .hero-div .web-index-img {
         width: 50%; }
-  main section .title-div {
+  .procesos-main section .title-div {
     text-align: center;
     padding: 30px; }
-    main section .title-div h2 {
+    .procesos-main section .title-div h2 {
       text-align: center;
       font-family: Merriweather;
       font-size: 30px;
       font-weight: 200;
       margin-top: 10px;
       margin-bottom: 20px; }
-    main section .title-div h3 {
+    .procesos-main section .title-div h3 {
       text-align: center;
       font-family: Mulish;
       font-size: 30px;
       font-weight: 200;
       margin-bottom: 30px;
       color: #F26D1F; }
-  main #elaboracion {
+  .procesos-main #elaboracion {
     grid-area: elaboracion; }
-    main #elaboracion .right-fusion-paragraph-div {
+    .procesos-main #elaboracion .right-fusion-paragraph-div {
       display: flex;
       justify-content: center;
       align-items: center; }
-      main #elaboracion .right-fusion-paragraph-div img {
+      .procesos-main #elaboracion .right-fusion-paragraph-div img {
         max-width: 60%; }
-      main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div {
+      .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div {
         text-align: center; }
-        main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
+        .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
           font-family: Mulish;
           font-size: 19px;
           margin: 50px;
           text-align: left; }
-  main #materia-prima {
+  .procesos-main #materia-prima {
     grid-area: matprima; }
-    main #materia-prima .left-fusion-paragraph-div {
+    .procesos-main #materia-prima .left-fusion-paragraph-div {
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
       align-items: center; }
-      main #materia-prima .left-fusion-paragraph-div img {
+      .procesos-main #materia-prima .left-fusion-paragraph-div img {
         max-width: 60%; }
-      main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div {
+      .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div {
         text-align: center; }
-        main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
+        .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
           font-family: Mulish;
           font-size: 19px;
           margin: 50px;
           text-align: left; }
+
+.productos-main {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "hero hero hero" ". product ."; }
+  .productos-main .hero {
+    grid-area: hero; }
+    .productos-main .hero .hero-div {
+      padding-left: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px; }
+      .productos-main .hero .hero-div .cel-index-img {
+        position: absolute;
+        visibility: hidden;
+        width: 50%; }
+      .productos-main .hero .hero-div div h1 {
+        font-family: Mulish;
+        font-size: 50px;
+        font-weight: 200;
+        color: #A1137C; }
+      .productos-main .hero .hero-div div h2 {
+        font-family: Bilbo;
+        font-weight: 400;
+        font-size: 70px; }
+      .productos-main .hero .hero-div .web-index-img {
+        width: 50%; }
+  .productos-main .product-section {
+    grid-area: product; }
+    .productos-main .product-section .left-product-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 70px; }
+      .productos-main .product-section .left-product-div div h2 {
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-right: 30px; }
+      .productos-main .product-section .left-product-div div h3 {
+        font-family: Merriweather;
+        font-size: 17px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 30px;
+        width: 400px;
+        color: #7a877f; }
+    .productos-main .product-section .right-product-div {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 70px; }
+      .productos-main .product-section .right-product-div div h2 {
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-right: 30px; }
+      .productos-main .product-section .right-product-div div h3 {
+        font-family: Merriweather;
+        font-size: 17px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 30px;
+        width: 400px;
+        color: #7a877f; }
 
 footer {
   background: linear-gradient(#2ba01391, #2ba01391), url("../img/vectorlechuga.jpg");
