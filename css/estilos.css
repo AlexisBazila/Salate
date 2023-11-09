@@ -768,6 +768,56 @@ footer {
   .index-main #variedad .product-div div {
     margin: 10px;
     width: 300px; }
+  .contacto-main .contact-section {
+    width: 100%;
+    background-image: url(../img/salad-banner4.jpg); }
+  .nosotros-main .hero {
+    grid-area: hero; }
+    .nosotros-main .hero .hero-div div h1 {
+      font-size: 40px; }
+    .nosotros-main .hero .hero-div div h2 {
+      font-size: 60px; }
+  .procesos-main .hero .hero-div div h1 {
+    font-size: 40px; }
+  .procesos-main .hero .hero-div div h2 {
+    font-size: 60px; }
+  .procesos-main #elaboracion .right-fusion-paragraph-div {
+    flex-direction: column; }
+    .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
+      text-align: center; }
+  .procesos-main #materia-prima .left-fusion-paragraph-div {
+    flex-direction: column; }
+    .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
+      text-align: center; }
+  .productos-main .hero .hero-div div h1 {
+    font-size: 40px; }
+  .productos-main .hero .hero-div div h2 {
+    font-size: 60px; }
+  .productos-main .product-section {
+    grid-area: product; }
+    .productos-main .product-section .left-product-div {
+      flex-direction: column;
+      align-items: center; }
+      .productos-main .product-section .left-product-div div h2 {
+        text-align: center;
+        width: 100%; }
+      .productos-main .product-section .left-product-div div h3 {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        width: 100%; }
+    .productos-main .product-section .right-product-div {
+      flex-direction: column; }
+      .productos-main .product-section .right-product-div div h2 {
+        text-align: center;
+        width: 100%; }
+      .productos-main .product-section .right-product-div div h3 {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        width: 100%; }
   footer .box-footer-div .content-footer-div div ul .title-footer-li a {
     font-size: 26px; }
   footer .box-footer-div .content-footer-div div ul .item-footer-li a {
@@ -818,7 +868,83 @@ footer {
   .index-main section {
     margin-bottom: 2%; }
   .index-main #variedad .product-div {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .contacto-main section {
+    margin-bottom: 2%; }
+  .contacto-main .contact-section {
+    background-image: none;
+    margin-top: 30px; }
+    .contacto-main .contact-section div {
+      justify-content: center;
+      align-items: center; }
+      .contacto-main .contact-section div form {
+        position: static;
+        text-align: center; }
+  .nosotros-main section {
+    margin-bottom: 2%; }
+  .nosotros-main .hero .hero-div {
+    flex-direction: column;
+    padding-left: 0%;
+    margin: 0;
+    text-align: center; }
+    .nosotros-main .hero .hero-div .cel-index-img {
+      visibility: visible;
+      padding-top: 10%;
+      margin-bottom: 2%;
+      position: static; }
+    .nosotros-main .hero .hero-div .web-index-img {
+      visibility: hidden;
+      position: absolute; }
+  .nosotros-main #equipo .large-content-div {
+    max-width: 100%; }
+    .nosotros-main #equipo .large-content-div div {
+      flex-direction: column; }
+      .nosotros-main #equipo .large-content-div div img {
+        max-width: 100%; }
+      .nosotros-main #equipo .large-content-div div div {
+        width: 100%; }
+        .nosotros-main #equipo .large-content-div div div p {
+          text-align: center;
+          background-color: rgba(255, 255, 255, 0.849);
+          padding: 0;
+          width: 100%;
+          margin-top: 15px;
+          position: static;
+          left: 0; }
+  .nosotros-main .pip-section div iframe {
+    width: 98%; }
+  .procesos-main .hero .hero-div {
+    flex-direction: column;
+    padding-left: 0%;
+    margin: 0;
+    text-align: center; }
+    .procesos-main .hero .hero-div .cel-index-img {
+      visibility: visible;
+      padding-top: 10%;
+      margin-bottom: 2%;
+      position: static; }
+    .procesos-main .hero .hero-div .web-index-img {
+      visibility: hidden;
+      position: absolute; }
+  .procesos-main section {
+    margin-bottom: 2%; }
+  .productos-main section {
+    margin-bottom: 2%; }
+  .productos-main .hero .hero-div {
+    flex-direction: column;
+    padding-left: 0%;
+    margin: 0;
+    text-align: center; }
+    .productos-main .hero .hero-div .cel-index-img {
+      visibility: visible;
+      padding-top: 10%;
+      margin-bottom: 2%;
+      position: static; }
+    .productos-main .hero .hero-div .web-index-img {
+      visibility: hidden;
+      position: absolute; }
+  .carusel {
+    scale: 90%; } }
 
 /*?-----------------------1010px ---------------------------------------------------------------*/
 @media screen and (max-width: 1010px) {
@@ -832,6 +958,44 @@ footer {
       font-size: 25px; }
     .index-main section .title-div h3 {
       font-size: 25px; }
+  .contacto-main section .title-div {
+    padding: 15px; }
+    .contacto-main section .title-div h2 {
+      font-size: 25px; }
+    .contacto-main section .title-div h3 {
+      font-size: 25px; }
+  .nosotros-main section .title-div {
+    padding: 15px; }
+    .nosotros-main section .title-div h2 {
+      font-size: 25px; }
+    .nosotros-main section .title-div h3 {
+      font-size: 25px; }
+  .nosotros-main .hero {
+    grid-area: hero; }
+    .nosotros-main .hero .hero-div div h1 {
+      font-size: 35px; }
+    .nosotros-main .hero .hero-div div h2 {
+      font-size: 55px; }
+  .procesos-main .hero .hero-div div h1 {
+    font-size: 35px; }
+  .procesos-main .hero .hero-div div h2 {
+    font-size: 55px; }
+  .procesos-main section .title-div {
+    padding: 15px; }
+    .procesos-main section .title-div h2 {
+      font-size: 25px; }
+    .procesos-main section .title-div h3 {
+      font-size: 25px; }
+  .productos-main section .title-div {
+    padding: 15px; }
+    .productos-main section .title-div h2 {
+      font-size: 25px; }
+    .productos-main section .title-div h3 {
+      font-size: 25px; }
+  .productos-main .hero .hero-div div h1 {
+    font-size: 35px; }
+  .productos-main .hero .hero-div div h2 {
+    font-size: 55px; }
   footer .box-footer-div {
     width: 98%; } }
 
@@ -842,11 +1006,32 @@ footer {
   header .web-navbar {
     display: none; }
   .index-main {
-    grid-template-columns: 2% 96% 2%; } }
+    grid-template-columns: 2% 96% 2%; }
+  .contacto-main {
+    grid-template-columns: 2% 96% 2%; }
+  .nosotros-main {
+    grid-template-columns: 2% 96% 2%; }
+    .nosotros-main .hero {
+      grid-area: hero; }
+    .nosotros-main .pip-section div iframe {
+      width: 600px;
+      height: 300px; }
+  .procesos-main {
+    grid-template-columns: 2% 96% 2%; }
+  .productos-main {
+    grid-template-columns: 2% 96% 2%; }
+  .carusel {
+    scale: 80%; } }
 
 /*?-----------------------800px ----------------------------------------------------------------*/
 @media screen and (max-width: 800px) {
   .index-main .hero .hero-div .cel-index-img {
+    padding-top: 15%; }
+  .nosotros-main .hero .hero-div .cel-index-img {
+    padding-top: 15%; }
+  .procesos-main .hero .hero-div .cel-index-img {
+    padding-top: 15%; }
+  .productos-main .hero .hero-div .cel-index-img {
     padding-top: 15%; }
   footer .box-footer-div .content-footer-div {
     display: flex;
@@ -874,7 +1059,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .carusel {
+    scale: 60%; } }
 
 /*?-----------------------600px ----------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
@@ -883,7 +1070,21 @@ footer {
   .index-main #variedad .product-div div {
     width: 200px; }
     .index-main #variedad .product-div div a p {
-      width: 200px; } }
+      width: 200px; }
+  .nosotros-main .hero {
+    grid-area: hero; }
+    .nosotros-main .hero .hero-div .cel-index-img {
+      padding-top: 20%; }
+  .nosotros-main #equipo .large-content-div div div p {
+    font-size: 16px; }
+  .nosotros-main .pip-section div iframe {
+    width: 70%; }
+  .procesos-main .hero .hero-div .cel-index-img {
+    padding-top: 20%; }
+  .productos-main .hero .hero-div .cel-index-img {
+    padding-top: 20%; }
+  .carusel {
+    scale: 50%; } }
 
 /*?-----------------------500px ----------------------------------------------------------------*/
 @media screen and (max-width: 500px) {
@@ -902,9 +1103,79 @@ footer {
   .index-main #que-es .right-fusion-paragraph-div img {
     max-width: 80%; }
   .index-main #proyectate .left-fusion-paragraph-div img {
-    max-width: 80%; } }
+    max-width: 80%; }
+  .contacto-main section {
+    margin-top: 40px; }
+    .contacto-main section .title-div img {
+      width: 70px; }
+    .contacto-main section .title-div h2 {
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .contacto-main section .title-div h3 {
+      font-size: 20px;
+      margin-bottom: 15px; }
+  .contacto-main .contact-section div form .input-div input {
+    width: 280px; }
+  .contacto-main .contact-section div form .textarea-div textarea {
+    width: 280px; }
+  .nosotros-main section .title-div img {
+    width: 70px; }
+  .nosotros-main section .title-div h2 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .nosotros-main section .title-div h3 {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .nosotros-main .hero {
+    grid-area: hero; }
+    .nosotros-main .hero .hero-div div h1 {
+      font-size: 25px; }
+    .nosotros-main .hero .hero-div div h2 {
+      font-size: 45px; }
+  .procesos-main .hero .hero-div div h1 {
+    font-size: 25px; }
+  .procesos-main .hero .hero-div div h2 {
+    font-size: 45px; }
+  .procesos-main section .title-div img {
+    width: 70px; }
+  .procesos-main section .title-div h2 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .procesos-main section .title-div h3 {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .procesos-main #elaboracion .right-fusion-paragraph-div img {
+    max-width: 80%; }
+  .procesos-main #materia-prima .left-fusion-paragraph-div img {
+    max-width: 80%; }
+  .productos-main section .title-div img {
+    width: 70px; }
+  .productos-main section .title-div h2 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .productos-main section .title-div h3 {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .productos-main .hero .hero-div div h1 {
+    font-size: 25px; }
+  .productos-main .hero .hero-div div h2 {
+    font-size: 45px; }
+  .productos-main .product-section .left-product-div div .carusel {
+    scale: 40%; }
+  .productos-main .product-section .right-product-div div .carusel {
+    scale: 40%; } }
 
 /*?-----------------------400px ----------------------------------------------------------------*/
 @media screen and (max-width: 400px) {
   .index-main .hero .hero-div .cel-index-img {
-    padding-top: 25%; } }
+    padding-top: 25%; }
+  .nosotros-main .hero {
+    grid-area: hero; }
+    .nosotros-main .hero .hero-div .cel-index-img {
+      padding-top: 25%; }
+  .nosotros-main .pip-section div iframe {
+    height: 70%; }
+  .procesos-main .hero .hero-div .cel-index-img {
+    padding-top: 25%; }
+  .carusel {
+    scale: 45%; } }
