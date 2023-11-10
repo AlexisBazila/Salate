@@ -325,7 +325,8 @@ header {
     .contacto-main .contact-section div form {
       position: relative;
       left: 10%;
-      font-weight: 200; }
+      font-weight: 200;
+      width: 500px; }
       .contacto-main .contact-section div form h4 {
         font-family: Merriweather;
         margin-bottom: 7px; }
@@ -333,7 +334,7 @@ header {
         position: relative;
         margin: 15px; }
         .contacto-main .contact-section div form .input-div input {
-          font: inherit;
+          font-family: inherit;
           color: black;
           padding: 10px;
           border: none;
@@ -751,7 +752,7 @@ footer {
         margin-top: 10px;
         color: #fff; }
 
-/*?-----------------------1440px ---------------------------------------------------------------*/
+/*1440px*/
 @media screen and (max-width: 1440px) {
   .index-main .hero .hero-div div h1 {
     font-size: 40px; }
@@ -765,6 +766,8 @@ footer {
     flex-direction: column; }
     .index-main #proyectate .left-fusion-paragraph-div div p {
       text-align: center; }
+    .index-main #proyectate .left-fusion-paragraph-div div a {
+      padding: 2%; }
   .index-main #variedad .product-div div {
     margin: 10px;
     width: 300px; }
@@ -827,7 +830,7 @@ footer {
   footer .box-footer-div .content-footer-div div div ul li p {
     font-size: 18px; } }
 
-/*?-----------------------1300px ---------------------------------------------------------------*/
+/*1300px*/
 @media screen and (max-width: 1300px) {
   footer .box-footer-div .content-footer-div {
     margin-bottom: 10px; }
@@ -848,7 +851,7 @@ footer {
       margin-right: 30px;
       font-size: 30px; } }
 
-/*?-----------------------1100px ---------------------------------------------------------------*/
+/*1100px*/
 @media screen and (max-width: 1100px) {
   header .web-navbar {
     background-color: #2ba013; }
@@ -866,7 +869,7 @@ footer {
       visibility: hidden;
       position: absolute; }
   .index-main section {
-    margin-bottom: 2%; }
+    margin-bottom: 5%; }
   .index-main #variedad .product-div {
     flex-direction: column; }
   .contacto-main section {
@@ -875,11 +878,15 @@ footer {
     background-image: none;
     margin-top: 30px; }
     .contacto-main .contact-section div {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center; }
       .contacto-main .contact-section div form {
         position: static;
         text-align: center; }
+  .contacto-main .comercios-section {
+    margin-bottom: 5%; }
   .nosotros-main section {
     margin-bottom: 2%; }
   .nosotros-main .hero .hero-div {
@@ -946,7 +953,7 @@ footer {
   .carusel {
     scale: 90%; } }
 
-/*?-----------------------1010px ---------------------------------------------------------------*/
+/*1010px*/
 @media screen and (max-width: 1010px) {
   .index-main .hero .hero-div div h1 {
     font-size: 35px; }
@@ -999,7 +1006,7 @@ footer {
   footer .box-footer-div {
     width: 98%; } }
 
-/*?-----------------------950px ----------------------------------------------------------------*/
+/*950px*/
 @media screen and (max-width: 950px) {
   header .celular-navbar {
     display: block; }
@@ -1023,7 +1030,7 @@ footer {
   .carusel {
     scale: 80%; } }
 
-/*?-----------------------800px ----------------------------------------------------------------*/
+/*800px*/
 @media screen and (max-width: 800px) {
   .index-main .hero .hero-div .cel-index-img {
     padding-top: 15%; }
@@ -1063,7 +1070,7 @@ footer {
   .carusel {
     scale: 60%; } }
 
-/*?-----------------------600px ----------------------------------------------------------------*/
+/*600px*/
 @media screen and (max-width: 600px) {
   .index-main .hero .hero-div .cel-index-img {
     padding-top: 20%; }
@@ -1086,7 +1093,7 @@ footer {
   .carusel {
     scale: 50%; } }
 
-/*?-----------------------500px ----------------------------------------------------------------*/
+/*500px*/
 @media screen and (max-width: 500px) {
   .index-main .hero .hero-div div h1 {
     font-size: 25px; }
@@ -1114,10 +1121,14 @@ footer {
     .contacto-main section .title-div h3 {
       font-size: 20px;
       margin-bottom: 15px; }
-  .contacto-main .contact-section div form .input-div input {
-    width: 280px; }
-  .contacto-main .contact-section div form .textarea-div textarea {
-    width: 280px; }
+  .contacto-main .contact-section {
+    margin-top: 40px; }
+    .contacto-main .contact-section div form {
+      width: 310px; }
+      .contacto-main .contact-section div form .input-div input {
+        width: 280px; }
+      .contacto-main .contact-section div form .textarea-div textarea {
+        width: 280px; }
   .nosotros-main section .title-div img {
     width: 70px; }
   .nosotros-main section .title-div h2 {
@@ -1165,7 +1176,7 @@ footer {
   .productos-main .product-section .right-product-div div .carusel {
     scale: 40%; } }
 
-/*?-----------------------400px ----------------------------------------------------------------*/
+/*400px*/
 @media screen and (max-width: 400px) {
   .index-main .hero .hero-div .cel-index-img {
     padding-top: 25%; }
