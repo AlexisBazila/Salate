@@ -2,18 +2,7 @@
 /*1440px*/
 @media screen and (max-width:1440px){
     .index-main {
-        .hero {
-            .hero-div {
-                div {
-                    h1 {
-                        font-size: 40px;
-                    }
-                    h2 {
-                        font-size: 60px;
-                    }
-                }
-            }
-        }
+
         #que-es {
             .right-fusion-paragraph-div {
                 flex-direction: column;
@@ -52,35 +41,7 @@
             background-image: url(../img/salad-banner4.jpg);
         }
     }
-    .nosotros-main{
-        .hero {
-            .hero-div {
-                div {
-                    h1 {
-                        font-size: 40px;
-                    }
-    
-                    h2 {
-                        font-size: 60px;
-                    }
-                }
-            }
-        }  
-    }
     .procesos-main {
-        .hero {
-          .hero-div {
-            div {
-              h1 {
-                font-size: 40px;
-              }
-      
-              h2 {
-                font-size: 60px;
-              }
-            }
-          }
-        }
         #elaboracion {
           .right-fusion-paragraph-div {
             flex-direction: column;
@@ -103,19 +64,6 @@
         }
     }
     .productos-main {
-        .hero {
-          .hero-div {
-            div {
-              h1 {
-                font-size: 40px;
-              }
-      
-              h2 {
-                font-size: 60px;
-              }
-            }
-          }
-        }
         .product-section {
           grid-area: product;
           .left-product-div {
@@ -189,6 +137,19 @@
             }
         }
     }
+    // Generales
+    .hero {
+        .hero-div {
+            div {
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
 }
 /*1300px*/
 @media screen and (max-width:1300px) {
@@ -255,28 +216,6 @@
         }
     }
     .index-main {
-        .hero {
-            .hero-div {
-                flex-direction: column;
-                padding-left: 0%;
-                margin: 0;
-                text-align: center;
-                .cel-index-img {
-                    visibility: visible;
-                    padding-top: 10%;
-                    margin-bottom: 2%;
-                    position: static;
-                }
-                .web-index-img {
-                    visibility: hidden;
-                    position: absolute;
-                }
-            }
-        }
-    
-        section {
-            margin-bottom: 5%;
-        }
         #variedad {
             .product-div {
               flex-wrap: wrap;
@@ -284,9 +223,6 @@
         }
     }
     .contacto-main{
-        section {
-            margin-bottom: 2%;
-        }
         .contact-section{
             background-image: none;
             margin-top: 30px;
@@ -306,27 +242,6 @@
         }
     }
     .nosotros-main{
-        section {
-            margin-bottom: 2%;
-        }
-        .hero {
-            .hero-div {
-                flex-direction: column;
-                padding-left: 0%;
-                margin: 0;
-                text-align: center;
-                .cel-index-img {
-                    visibility: visible;
-                    padding-top: 10%;
-                    margin-bottom: 2%;
-                    position: static;
-                }
-                .web-index-img {
-                    visibility: hidden;
-                    position: absolute;
-                }
-            }
-        }
         #equipo{
             .large-content-div{
                 max-width: 100%;
@@ -358,9 +273,14 @@
             }
         }
     }
-    .procesos-main {
-        .hero {
-          .hero-div {
+    footer{
+        .box-footer-div{
+            width: 98%;   
+        }
+    }
+    // Generales
+    .hero {
+        .hero-div {
             flex-direction: column;
             padding-left: 0%;
             margin: 0;
@@ -375,39 +295,10 @@
                 visibility: hidden;
                 position: absolute;
             }
-          }
-        }
-        section {
-            margin-bottom: 2%;
         }
     }
-    .productos-main {
-        section {
-            margin-bottom: 2%;
-        }
-        .hero {
-            .hero-div {
-              flex-direction: column;
-              padding-left: 0%;
-              margin: 0;
-              text-align: center;
-              .cel-index-img {
-                  visibility: visible;
-                  padding-top: 10%;
-                  margin-bottom: 2%;
-                  position: static;
-              }
-              .web-index-img {
-                  visibility: hidden;
-                  position: absolute;
-              }
-          }
-            }
-    }
-    footer{
-        .box-footer-div{
-            width: 98%;   
-        }
+    section {
+        margin-bottom: 5%;
     }
     // Clases Boostrap
     .carusel {
@@ -417,31 +308,6 @@
 /*1010px*/
 @media screen and (max-width:1010px) {
     .index-main {
-        .hero {
-            .hero-div {
-                div {
-                    h1 {
-                        font-size: 35px;
-                    }
-                    h2 {
-                        font-size: 55px;
-                    }
-                }
-            }
-        }
-        section {
-            .title-div {
-                padding: 15px;
-                h2 {
-                    font-size: 25px;
-                }
-    
-                h3 {
-                    font-size: 25px;
-                }
-            }
-        }
-    
         #que-es {
             .right-fusion-paragraph-div {
                 img {}
@@ -493,99 +359,32 @@
             }
         }
     }
-    .contacto-main{
-        section {
-            .title-div {
-                padding: 15px;
-                h2 {
-                    font-size: 25px;
-                }
-    
-                h3 {
-                    font-size: 25px;
-                }
-            }
-        }
-    }
-    .nosotros-main{
-        section {
-            .title-div {
-                padding: 15px;
-                h2 {
-                    font-size: 25px;
-                }
-                h3 {
-                    font-size: 25px;
-                }
-            }  
-        }
-        .hero {
-            .hero-div {
-                div {
-                    h1 {
-                        font-size: 35px;
-                    }
-    
-                    h2 {
-                        font-size: 55px;
-                    }
-                }
-            }
-        }
-    }
-    .procesos-main {
-        .hero {
-          .hero-div {
+    // Generales
+    .hero {
+        .hero-div {
             div {
-              h1 {
-                font-size: 35px;
-              }
-              h2 {
-                font-size: 55px;
-              }
+                h1 {
+                    font-size: 35px;
+                }
+                h2 {
+                    font-size: 55px;
+                }
             }
-          }
         }
-        section {
-          .title-div {
+    }
+    section {
+        .title-div {
             padding: 15px;
             h2 {
                 font-size: 25px;
             }
+
             h3 {
                 font-size: 25px;
             }
-          }
         }
     }
-    .productos-main {
-        section {
-            .title-div {
-              padding: 15px;
-              h2 {
-                  font-size: 25px;
-              }
-              h3 {
-                  font-size: 25px;
-              }
-            }
-          }
-        .hero {
-          .hero-div {
-            div {
-              h1 {
-                font-size: 35px;
-              }
-              h2 {
-                font-size: 55px;
-              }
-            }
-      
-            .web-index-img {
-            }
-          }
-        }
-    }
+
 }
 /*950px*/
 @media screen and (max-width:950px) {
@@ -1029,3 +828,6 @@
         scale: 40%;
     }
 }
+
+// NOTAS
+// -En las mediaqueries los elementos que dicen general son elementos que se repiten en todas las paginas, por eso estan declarados por fuera de los main una sola vez

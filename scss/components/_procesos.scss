@@ -6,65 +6,6 @@
         "hero hero hero"
         ". elaboracion ."
         ". matprima .";
-    .hero {
-        grid-area: hero;
-        .hero-div {
-            padding-left: 15%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 50px;
-
-            .cel-index-img {
-                position: absolute;
-                visibility: hidden;
-                width: 50%;
-            }
-
-            div {
-                h1 {
-                    font-family: Mulish;
-                    font-size: 50px;
-                    font-weight: 200;
-                    color: #A1137C;
-                }
-
-                h2 {
-                    font-family: Bilbo;
-                    font-weight: 400;
-                    font-size: 70px;
-                }
-            }
-
-            .web-index-img {
-                width: 50%;
-            }
-        }
-    }
-
-    section {
-        .title-div {
-            text-align: center;
-            padding: 30px;
-            h2 {
-                text-align: center;
-                font-family: Merriweather;
-                font-size: 30px;
-                font-weight: 200;
-                margin-top: 10px;
-                margin-bottom: 20px;
-            }
-
-            h3 {
-                text-align: center;
-                font-family: Mulish;
-                font-size: 30px;
-                font-weight: 200;
-                margin-bottom: 30px;
-                color: #F26D1F;
-            }
-        }
-    }
 
     #elaboracion{
         grid-area: elaboracion;

@@ -7,6 +7,47 @@
 
 section {
   margin-bottom: 100px; }
+  section .title-div {
+    text-align: center;
+    padding: 30px; }
+    section .title-div h2 {
+      text-align: center;
+      font-family: Merriweather;
+      font-size: 30px;
+      font-weight: 200;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+    section .title-div h3 {
+      text-align: center;
+      font-family: Mulish;
+      font-size: 30px;
+      font-weight: 200;
+      margin-bottom: 30px;
+      color: #F26D1F; }
+
+.hero {
+  grid-area: hero; }
+  .hero .hero-div {
+    padding-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; }
+    .hero .hero-div .cel-index-img {
+      position: absolute;
+      visibility: hidden;
+      width: 50%; }
+    .hero .hero-div div h1 {
+      font-family: Mulish;
+      font-size: 50px;
+      font-weight: 200;
+      color: #A1137C; }
+    .hero .hero-div div h2 {
+      font-family: Bilbo;
+      font-weight: 400;
+      font-size: 70px; }
+    .hero .hero-div .web-index-img {
+      width: 50%; }
 
 .bxl-instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
@@ -175,46 +216,6 @@ header {
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "hero hero hero" ". que-es ." ". proyectate ." ". variedad ."; }
-  .index-main .hero {
-    grid-area: hero; }
-    .index-main .hero .hero-div {
-      padding-left: 15%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px; }
-      .index-main .hero .hero-div .cel-index-img {
-        position: absolute;
-        visibility: hidden;
-        width: 50%; }
-      .index-main .hero .hero-div div h1 {
-        font-family: Mulish;
-        font-size: 50px;
-        font-weight: 200;
-        color: #A1137C; }
-      .index-main .hero .hero-div div h2 {
-        font-family: Bilbo;
-        font-weight: 400;
-        font-size: 70px; }
-      .index-main .hero .hero-div .web-index-img {
-        width: 50%; }
-  .index-main section .title-div {
-    text-align: center;
-    padding: 30px; }
-    .index-main section .title-div h2 {
-      text-align: center;
-      font-family: Merriweather;
-      font-size: 30px;
-      font-weight: 200;
-      margin-top: 10px;
-      margin-bottom: 20px; }
-    .index-main section .title-div h3 {
-      text-align: center;
-      font-family: Mulish;
-      font-size: 30px;
-      font-weight: 200;
-      margin-bottom: 30px;
-      color: #F26D1F; }
   .index-main #que-es {
     grid-area: que-es; }
     .index-main #que-es .right-fusion-paragraph-div {
@@ -301,23 +302,6 @@ header {
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "contacto contacto contacto" "mapa mapa mapa" ". comercios ."; }
-  .contacto-main section .title-div {
-    text-align: center;
-    padding: 30px; }
-    .contacto-main section .title-div h2 {
-      text-align: center;
-      font-family: Merriweather;
-      font-size: 30px;
-      font-weight: 200;
-      margin-top: 10px;
-      margin-bottom: 20px; }
-    .contacto-main section .title-div h3 {
-      text-align: center;
-      font-family: Mulish;
-      font-size: 30px;
-      font-weight: 200;
-      margin-bottom: 30px;
-      color: #F26D1F; }
   .contacto-main .contact-section {
     background-image: url("../img/salad-banner3.jpg");
     background-size: cover;
@@ -427,46 +411,6 @@ header {
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "hero hero hero" ". historia ." "equipo equipo equipo" ". pip ."; }
-  .nosotros-main section .title-div {
-    text-align: center;
-    padding: 30px; }
-    .nosotros-main section .title-div h2 {
-      text-align: center;
-      font-family: Merriweather;
-      font-size: 30px;
-      font-weight: 200;
-      margin-top: 10px;
-      margin-bottom: 20px; }
-    .nosotros-main section .title-div h3 {
-      text-align: center;
-      font-family: Mulish;
-      font-size: 30px;
-      font-weight: 200;
-      margin-bottom: 30px;
-      color: #F26D1F; }
-  .nosotros-main .hero {
-    grid-area: hero; }
-    .nosotros-main .hero .hero-div {
-      padding-left: 15%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px; }
-      .nosotros-main .hero .hero-div .cel-index-img {
-        position: absolute;
-        visibility: hidden;
-        width: 50%; }
-      .nosotros-main .hero .hero-div div h1 {
-        font-family: Mulish;
-        font-size: 50px;
-        font-weight: 200;
-        color: #A1137C; }
-      .nosotros-main .hero .hero-div div h2 {
-        font-family: Bilbo;
-        font-weight: 400;
-        font-size: 70px; }
-      .nosotros-main .hero .hero-div .web-index-img {
-        width: 50%; }
   .nosotros-main #historia {
     grid-area: historia; }
     .nosotros-main #historia div {
@@ -527,46 +471,6 @@ header {
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "hero hero hero" ". elaboracion ." ". matprima ."; }
-  .procesos-main .hero {
-    grid-area: hero; }
-    .procesos-main .hero .hero-div {
-      padding-left: 15%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px; }
-      .procesos-main .hero .hero-div .cel-index-img {
-        position: absolute;
-        visibility: hidden;
-        width: 50%; }
-      .procesos-main .hero .hero-div div h1 {
-        font-family: Mulish;
-        font-size: 50px;
-        font-weight: 200;
-        color: #A1137C; }
-      .procesos-main .hero .hero-div div h2 {
-        font-family: Bilbo;
-        font-weight: 400;
-        font-size: 70px; }
-      .procesos-main .hero .hero-div .web-index-img {
-        width: 50%; }
-  .procesos-main section .title-div {
-    text-align: center;
-    padding: 30px; }
-    .procesos-main section .title-div h2 {
-      text-align: center;
-      font-family: Merriweather;
-      font-size: 30px;
-      font-weight: 200;
-      margin-top: 10px;
-      margin-bottom: 20px; }
-    .procesos-main section .title-div h3 {
-      text-align: center;
-      font-family: Mulish;
-      font-size: 30px;
-      font-weight: 200;
-      margin-bottom: 30px;
-      color: #F26D1F; }
   .procesos-main #elaboracion {
     grid-area: elaboracion; }
     .procesos-main #elaboracion .right-fusion-paragraph-div {
@@ -604,29 +508,6 @@ header {
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "hero hero hero" ". product ."; }
-  .productos-main .hero {
-    grid-area: hero; }
-    .productos-main .hero .hero-div {
-      padding-left: 15%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px; }
-      .productos-main .hero .hero-div .cel-index-img {
-        position: absolute;
-        visibility: hidden;
-        width: 50%; }
-      .productos-main .hero .hero-div div h1 {
-        font-family: Mulish;
-        font-size: 50px;
-        font-weight: 200;
-        color: #A1137C; }
-      .productos-main .hero .hero-div div h2 {
-        font-family: Bilbo;
-        font-weight: 400;
-        font-size: 70px; }
-      .productos-main .hero .hero-div .web-index-img {
-        width: 50%; }
   .productos-main .product-section {
     grid-area: product; }
     .productos-main .product-section .left-product-div {
@@ -755,10 +636,6 @@ footer {
 
 /*1440px*/
 @media screen and (max-width: 1440px) {
-  .index-main .hero .hero-div div h1 {
-    font-size: 40px; }
-  .index-main .hero .hero-div div h2 {
-    font-size: 60px; }
   .index-main #que-es .right-fusion-paragraph-div {
     flex-direction: column; }
     .index-main #que-es .right-fusion-paragraph-div div p {
@@ -775,14 +652,6 @@ footer {
   .contacto-main .contact-section {
     width: 100%;
     background-image: url(../img/salad-banner4.jpg); }
-  .nosotros-main .hero .hero-div div h1 {
-    font-size: 40px; }
-  .nosotros-main .hero .hero-div div h2 {
-    font-size: 60px; }
-  .procesos-main .hero .hero-div div h1 {
-    font-size: 40px; }
-  .procesos-main .hero .hero-div div h2 {
-    font-size: 60px; }
   .procesos-main #elaboracion .right-fusion-paragraph-div {
     flex-direction: column; }
     .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
@@ -791,10 +660,6 @@ footer {
     flex-direction: column; }
     .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
       text-align: center; }
-  .productos-main .hero .hero-div div h1 {
-    font-size: 40px; }
-  .productos-main .hero .hero-div div h2 {
-    font-size: 60px; }
   .productos-main .product-section {
     grid-area: product; }
     .productos-main .product-section .left-product-div {
@@ -827,7 +692,11 @@ footer {
   footer .box-footer-div .content-footer-div div div ul .title-footer-li a {
     font-size: 26px; }
   footer .box-footer-div .content-footer-div div div ul li p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .hero .hero-div div h1 {
+    font-size: 40px; }
+  .hero .hero-div div h2 {
+    font-size: 60px; } }
 
 /*1300px*/
 @media screen and (max-width: 1300px) {
@@ -854,25 +723,8 @@ footer {
 @media screen and (max-width: 1100px) {
   header .web-navbar {
     background-color: #2ba013; }
-  .index-main .hero .hero-div {
-    flex-direction: column;
-    padding-left: 0%;
-    margin: 0;
-    text-align: center; }
-    .index-main .hero .hero-div .cel-index-img {
-      visibility: visible;
-      padding-top: 10%;
-      margin-bottom: 2%;
-      position: static; }
-    .index-main .hero .hero-div .web-index-img {
-      visibility: hidden;
-      position: absolute; }
-  .index-main section {
-    margin-bottom: 5%; }
   .index-main #variedad .product-div {
     flex-wrap: wrap; }
-  .contacto-main section {
-    margin-bottom: 2%; }
   .contacto-main .contact-section {
     background-image: none;
     margin-top: 30px; }
@@ -886,21 +738,6 @@ footer {
         text-align: center; }
   .contacto-main .comercios-section {
     margin-bottom: 5%; }
-  .nosotros-main section {
-    margin-bottom: 2%; }
-  .nosotros-main .hero .hero-div {
-    flex-direction: column;
-    padding-left: 0%;
-    margin: 0;
-    text-align: center; }
-    .nosotros-main .hero .hero-div .cel-index-img {
-      visibility: visible;
-      padding-top: 10%;
-      margin-bottom: 2%;
-      position: static; }
-    .nosotros-main .hero .hero-div .web-index-img {
-      visibility: hidden;
-      position: absolute; }
   .nosotros-main #equipo .large-content-div {
     max-width: 100%; }
     .nosotros-main #equipo .large-content-div div {
@@ -919,89 +756,38 @@ footer {
           left: 0; }
   .nosotros-main .pip-section div iframe {
     width: 98%; }
-  .procesos-main .hero .hero-div {
-    flex-direction: column;
-    padding-left: 0%;
-    margin: 0;
-    text-align: center; }
-    .procesos-main .hero .hero-div .cel-index-img {
-      visibility: visible;
-      padding-top: 10%;
-      margin-bottom: 2%;
-      position: static; }
-    .procesos-main .hero .hero-div .web-index-img {
-      visibility: hidden;
-      position: absolute; }
-  .procesos-main section {
-    margin-bottom: 2%; }
-  .productos-main section {
-    margin-bottom: 2%; }
-  .productos-main .hero .hero-div {
-    flex-direction: column;
-    padding-left: 0%;
-    margin: 0;
-    text-align: center; }
-    .productos-main .hero .hero-div .cel-index-img {
-      visibility: visible;
-      padding-top: 10%;
-      margin-bottom: 2%;
-      position: static; }
-    .productos-main .hero .hero-div .web-index-img {
-      visibility: hidden;
-      position: absolute; }
   footer .box-footer-div {
     width: 98%; }
+  .hero .hero-div {
+    flex-direction: column;
+    padding-left: 0%;
+    margin: 0;
+    text-align: center; }
+    .hero .hero-div .cel-index-img {
+      visibility: visible;
+      padding-top: 10%;
+      margin-bottom: 2%;
+      position: static; }
+    .hero .hero-div .web-index-img {
+      visibility: hidden;
+      position: absolute; }
+  section {
+    margin-bottom: 5%; }
   .carusel {
     scale: 90%; } }
 
 /*1010px*/
 @media screen and (max-width: 1010px) {
-  .index-main .hero .hero-div div h1 {
+  .hero .hero-div div h1 {
     font-size: 35px; }
-  .index-main .hero .hero-div div h2 {
+  .hero .hero-div div h2 {
     font-size: 55px; }
-  .index-main section .title-div {
+  section .title-div {
     padding: 15px; }
-    .index-main section .title-div h2 {
+    section .title-div h2 {
       font-size: 25px; }
-    .index-main section .title-div h3 {
-      font-size: 25px; }
-  .contacto-main section .title-div {
-    padding: 15px; }
-    .contacto-main section .title-div h2 {
-      font-size: 25px; }
-    .contacto-main section .title-div h3 {
-      font-size: 25px; }
-  .nosotros-main section .title-div {
-    padding: 15px; }
-    .nosotros-main section .title-div h2 {
-      font-size: 25px; }
-    .nosotros-main section .title-div h3 {
-      font-size: 25px; }
-  .nosotros-main .hero .hero-div div h1 {
-    font-size: 35px; }
-  .nosotros-main .hero .hero-div div h2 {
-    font-size: 55px; }
-  .procesos-main .hero .hero-div div h1 {
-    font-size: 35px; }
-  .procesos-main .hero .hero-div div h2 {
-    font-size: 55px; }
-  .procesos-main section .title-div {
-    padding: 15px; }
-    .procesos-main section .title-div h2 {
-      font-size: 25px; }
-    .procesos-main section .title-div h3 {
-      font-size: 25px; }
-  .productos-main section .title-div {
-    padding: 15px; }
-    .productos-main section .title-div h2 {
-      font-size: 25px; }
-    .productos-main section .title-div h3 {
-      font-size: 25px; }
-  .productos-main .hero .hero-div div h1 {
-    font-size: 35px; }
-  .productos-main .hero .hero-div div h2 {
-    font-size: 55px; } }
+    section .title-div h3 {
+      font-size: 25px; } }
 
 /*950px*/
 @media screen and (max-width: 950px) {
