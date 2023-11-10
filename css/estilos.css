@@ -55,7 +55,8 @@ section {
 
 .card {
   width: 239px;
-  height: 400px; }
+  height: 400px;
+  margin: 5px; }
 
 header {
   position: fixed;
@@ -869,7 +870,7 @@ footer {
   .index-main section {
     margin-bottom: 5%; }
   .index-main #variedad .product-div {
-    flex-direction: column; }
+    flex-wrap: wrap; }
   .contacto-main section {
     margin-bottom: 2%; }
   .contacto-main .contact-section {
@@ -948,6 +949,8 @@ footer {
     .productos-main .hero .hero-div .web-index-img {
       visibility: hidden;
       position: absolute; }
+  footer .box-footer-div {
+    width: 98%; }
   .carusel {
     scale: 90%; } }
 
@@ -975,12 +978,10 @@ footer {
       font-size: 25px; }
     .nosotros-main section .title-div h3 {
       font-size: 25px; }
-  .nosotros-main .hero {
-    grid-area: hero; }
-    .nosotros-main .hero .hero-div div h1 {
-      font-size: 35px; }
-    .nosotros-main .hero .hero-div div h2 {
-      font-size: 55px; }
+  .nosotros-main .hero .hero-div div h1 {
+    font-size: 35px; }
+  .nosotros-main .hero .hero-div div h2 {
+    font-size: 55px; }
   .procesos-main .hero .hero-div div h1 {
     font-size: 35px; }
   .procesos-main .hero .hero-div div h2 {
@@ -1000,9 +1001,7 @@ footer {
   .productos-main .hero .hero-div div h1 {
     font-size: 35px; }
   .productos-main .hero .hero-div div h2 {
-    font-size: 55px; }
-  footer .box-footer-div {
-    width: 98%; } }
+    font-size: 55px; } }
 
 /*950px*/
 @media screen and (max-width: 950px) {
@@ -1016,8 +1015,6 @@ footer {
     grid-template-columns: 2% 96% 2%; }
   .nosotros-main {
     grid-template-columns: 2% 96% 2%; }
-    .nosotros-main .hero {
-      grid-area: hero; }
     .nosotros-main .pip-section div iframe {
       width: 600px;
       height: 300px; }
@@ -1076,10 +1073,8 @@ footer {
     width: 200px; }
     .index-main #variedad .product-div div a p {
       width: 200px; }
-  .nosotros-main .hero {
-    grid-area: hero; }
-    .nosotros-main .hero .hero-div .cel-index-img {
-      padding-top: 20%; }
+  .nosotros-main .hero .hero-div .cel-index-img {
+    padding-top: 20%; }
   .nosotros-main #equipo .large-content-div div div p {
     font-size: 16px; }
   .nosotros-main .pip-section div iframe {
@@ -1135,12 +1130,10 @@ footer {
   .nosotros-main section .title-div h3 {
     font-size: 20px;
     margin-bottom: 15px; }
-  .nosotros-main .hero {
-    grid-area: hero; }
-    .nosotros-main .hero .hero-div div h1 {
-      font-size: 25px; }
-    .nosotros-main .hero .hero-div div h2 {
-      font-size: 45px; }
+  .nosotros-main .hero .hero-div div h1 {
+    font-size: 25px; }
+  .nosotros-main .hero .hero-div div h2 {
+    font-size: 45px; }
   .procesos-main .hero .hero-div div h1 {
     font-size: 25px; }
   .procesos-main .hero .hero-div div h2 {
@@ -1168,23 +1161,17 @@ footer {
   .productos-main .hero .hero-div div h1 {
     font-size: 25px; }
   .productos-main .hero .hero-div div h2 {
-    font-size: 45px; }
-  .productos-main .product-section .left-product-div div .carusel {
-    scale: 40%; }
-  .productos-main .product-section .right-product-div div .carusel {
-    scale: 40%; } }
+    font-size: 45px; } }
 
 /*400px*/
 @media screen and (max-width: 400px) {
   .index-main .hero .hero-div .cel-index-img {
     padding-top: 25%; }
-  .nosotros-main .hero {
-    grid-area: hero; }
-    .nosotros-main .hero .hero-div .cel-index-img {
-      padding-top: 25%; }
+  .nosotros-main .hero .hero-div .cel-index-img {
+    padding-top: 25%; }
   .nosotros-main .pip-section div iframe {
     height: 70%; }
   .procesos-main .hero .hero-div .cel-index-img {
     padding-top: 25%; }
   .carusel {
-    scale: 45%; } }
+    scale: 40%; } }
