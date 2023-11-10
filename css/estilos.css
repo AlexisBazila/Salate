@@ -774,12 +774,10 @@ footer {
   .contacto-main .contact-section {
     width: 100%;
     background-image: url(../img/salad-banner4.jpg); }
-  .nosotros-main .hero {
-    grid-area: hero; }
-    .nosotros-main .hero .hero-div div h1 {
-      font-size: 40px; }
-    .nosotros-main .hero .hero-div div h2 {
-      font-size: 60px; }
+  .nosotros-main .hero .hero-div div h1 {
+    font-size: 40px; }
+  .nosotros-main .hero .hero-div div h2 {
+    font-size: 60px; }
   .procesos-main .hero .hero-div div h1 {
     font-size: 40px; }
   .procesos-main .hero .hero-div div h2 {

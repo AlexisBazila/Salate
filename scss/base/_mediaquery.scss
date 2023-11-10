@@ -4,200 +4,57 @@
     .index-main {
         .hero {
             .hero-div {
-                .cel-index-img {}
-    
                 div {
                     h1 {
                         font-size: 40px;
                     }
-    
                     h2 {
                         font-size: 60px;
                     }
                 }
-    
-                .web-index-img {}
             }
         }
-    
-        section {
-            .title-div {
-                img {}
-    
-                h2 {}
-    
-                h3 {}
-            }
-        }
-    
         #que-es {
             .right-fusion-paragraph-div {
                 flex-direction: column;
-                img {}
-    
                 div {
-    
                     p {
                         text-align: center;
                     }
                 }
             }
         }
-    
-    
         #proyectate {
-    
             .left-fusion-paragraph-div {
                 flex-direction: column;    
-                img {}
-    
                 div {
-    
                     p {
                         text-align: center;
                     }
-    
                     a {
                         padding: 2%;
-                        &:hover {}
                     }
                 }
             }
         }
-    
         #variedad {
-    
             .product-div {
-    
                 div {
                     margin: 10px;
                     width: 300px;
-                    &:hover {}
-    
-                    a {
-    
-    
-                        img {}
-    
-                        h4 {}
-    
-                        p {}
-                    }
                 }
             }
         }
     }
     .contacto-main{
-        section {
-            .title-div {
-    
-    
-                img {}
-    
-                h2 {
-    
-                }
-    
-                h3 {
-    
-                }
-            }
-        }
         .contact-section{
             width: 100%;
             background-image: url(../img/salad-banner4.jpg);
-            div{
-                form{
-    
-                    h4{
-    
-                    }
-                    .input-div{
-    
-                        input{
-    
-                            &:focus+.input-label,
-                            &:valid+.input-label {
-    
-                            }
-                            &:is(:focus, :valid) {
-    
-                            }                        
-                        }
-                        label{
-    
-                        }
-                    }
-                    .textarea-div{
-    
-                        textarea{
-    
-                            &:focus+.textarea-label,
-                            &:valid+.textarea-label {
-    
-                            }
-                            
-                            &:is(:focus, :valid) {
-    
-                            }                      
-                        }
-                        label{
-    
-                        }
-                    }
-                    button{
-    
-                        &:hover {
-    
-                        }
-                    }
-                }
-            }
-        }
-    
-        .map-section{
-            div{
-    
-            }
-    
-            iframe{
-    
-            }
-        }
-    
-        .comercios-section{
-    
-            .carousel-comercios-div {
-            }
         }
     }
     .nosotros-main{
-
-        section {
-            .title-div {
-    
-    
-                img {}
-    
-                h2 {
-    
-                }
-    
-                h3 {
-    
-                }
-            }
-        }
         .hero {
-            grid-area: hero;
-    
             .hero-div {
-    
-    
-                .cel-index-img {
-    
-                }
-    
                 div {
                     h1 {
                         font-size: 40px;
@@ -207,60 +64,12 @@
                         font-size: 60px;
                     }
                 }
-    
-                .web-index-img {
-    
-                }
             }
-        }
-    
-        #historia{
-    
-            div{
-    
-                p{
-    
-                }
-            }
-        }
-    
-        #equipo{
-    
-            .large-content-div{
-    
-                div{
-    
-                    img{
-    
-                    }
-                    div{
-                        p{
-    
-                        }
-                    }
-                }
-            }
-        }
-    
-        .pip-section{
-    
-            div{
-    
-                p{
-    
-                }
-                iframe{
-    
-                }
-            }
-        }
+        }  
     }
     .procesos-main {
         .hero {
           .hero-div {
-            .cel-index-img {
-            }
-      
             div {
               h1 {
                 font-size: 40px;
@@ -270,30 +79,11 @@
                 font-size: 60px;
               }
             }
-      
-            .web-index-img {
-            }
           }
         }
-      
-        section {
-          .title-div {
-            img {
-            }
-      
-            h2 {
-            }
-      
-            h3 {
-            }
-          }
-        }
-      
         #elaboracion {
           .right-fusion-paragraph-div {
             flex-direction: column;
-            img {
-            }
             .fusion-paragrapfh-div {
               p {
                 text-align: center;
@@ -301,12 +91,9 @@
             }
           }
         }
-      
         #materia-prima {
           .left-fusion-paragraph-div {
             flex-direction: column;
-            img {
-            }
             .fusion-paragrapfh-div {
               p {
                 text-align: center;
@@ -318,9 +105,6 @@
     .productos-main {
         .hero {
           .hero-div {
-            .cel-index-img {
-            }
-      
             div {
               h1 {
                 font-size: 40px;
@@ -330,12 +114,8 @@
                 font-size: 60px;
               }
             }
-      
-            .web-index-img {
-            }
           }
         }
-      
         .product-section {
           grid-area: product;
           .left-product-div {
@@ -353,8 +133,6 @@
                 margin-left: 0;
                 width: 100%;
               }
-              .carusel {
-              }
             }
           }
           .right-product-div {
@@ -371,37 +149,23 @@
                 margin-left: 0;
                 width: 100%;
               }
-              .carusel {
-              }
             }
           }
         }
     }
     footer{
-
         .box-footer-div{
-    
             .content-footer-div{
-    
                 div{
                     ul{
-    
                         .title-footer-li{
-    
                             a{
                                 font-size: 26px;    
-                                &:hover {
-    
-                                }
                             }
                         }
                         .item-footer-li{
-    
                             a{
                                 font-size: 20px;    
-                                &:hover {
-    
-                                }
                             }
                         }
                     }
@@ -412,45 +176,15 @@
                             .title-footer-li{
                                 a{
                                     font-size: 26px;    
-                                    &:hover {
-    
-                                    }
                                 }
                             }
                             li{
                                 p{
                                     font-size: 18px;    
-                                    i{
-    
-                                    }
                                 }
                             }
                         }
                     }
-                    .media-footer-div{
-                        ul{
-    
-                            li{
-                                a{
-                                    i{
-    
-                                        &:hover {
-    
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .copy-footer-div{
-    
-                img{
-    
-                }
-                p{
-    
                 }
             }
         }
