@@ -26,7 +26,7 @@ section {
             font-size: 30px;
             font-weight: 200;
             margin-bottom: 30px;
-            color: #F26D1F;
+            color: $tertiary-color;
         }
     }
 }
@@ -35,9 +35,7 @@ section {
     grid-area: hero;
     .hero-div {
         padding-left: 15%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-between;
         margin-bottom: 50px;
 
         .cel-index-img {
@@ -51,7 +49,7 @@ section {
                 font-family: Mulish;
                 font-size: 50px;
                 font-weight: 200;
-                color: #A1137C;
+                color: $secondary-color;
             }
 
             h2 {
@@ -82,7 +80,7 @@ section {
 .bx-phone-call,
 .bx-envelope,
 .bx-map-pin {
-    color: #A1137C;
+    color: $secondary-color;
 }  
 
 .card-body {
@@ -90,35 +88,25 @@ section {
 }
 
 .carousel-control-prev-icon {
-    background-color: #2ba013;
+    background-color: $primary-color;
 }
 
 .carousel-control-next-icon {
-    background-color: #2ba013
+    background-color: $primary-color;
 }
 
 .carousel-item-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     padding: 2% 10% 2% 10%;
     text-align: center;
 }
 
 .boton {
-    text-decoration: none;
-    font-family: Mulish;
-    font-weight: 500;
-    font-size: 20px;
+    @extend %boton;
     padding: 4%;
-    color: white;
-    background-color: #2ba013;
-    border-radius: 30px;
-    transition: 300ms;
-    border: 2px solid #2ba013;
     &:hover {
-        background: white;
-        color: #2ba013;
+        background: nth($white-color, 3);
+        color: $primary-color;
     }
 }
 
@@ -126,4 +114,8 @@ section {
     width: 239px;
     height: 400px;
     margin: 5px;
+}
+
+.carousel-indicators{
+display: none;
 }

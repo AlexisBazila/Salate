@@ -20,6 +20,7 @@
                         font-weight: 200;
                         padding-left: 30px;
                         padding-right: 30px;
+                        color: $tertiary-color;
                     }
                     h3{
                         font-family: Merriweather;
@@ -29,7 +30,7 @@
                         padding-right: 30px;
                         margin-left: 30px;
                         width: 400px;
-                        color: #7a877f;
+                        color: nht($white-color, 2);
                     }
                 }
             }
@@ -46,6 +47,7 @@
                         font-weight: 200;
                         padding-left: 30px;
                         padding-right: 30px;
+                        color: $tertiary-color;
                     }
                     h3{
                         font-family: Merriweather;
@@ -55,7 +57,7 @@
                         padding-right: 30px;
                         margin-left: 30px;
                         width: 400px;
-                        color: #7a877f;
+                        color: nht($white-color, 2);
                     }
                 }
             }

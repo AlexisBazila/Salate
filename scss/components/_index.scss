@@ -11,22 +11,16 @@
     #que-es {
         grid-area: que-es;
         .right-fusion-paragraph-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
+            @extend %flex-center;
             img {
                 max-width: 60%;
             }
 
             div {
                 text-align: center;
-
                 p {
-                    font-family: Mulish;
-                    font-size: 19px;
+                    @include paragraphs(Mulish, 19px, left);
                     margin: 50px;
-                    text-align: left;
                 }
             }
         }
@@ -37,10 +31,7 @@
         grid-area: proyectate;
 
         .left-fusion-paragraph-div {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center-reverse;
 
             img {
                 max-width: 60%;
@@ -50,26 +41,16 @@
                 text-align: center;
 
                 p {
-                    font-family: Mulish;
-                    font-size: 19px;
+                    @include paragraphs(Mulish, 19px, left);
                     margin: 50px;
-                    text-align: left;
                 }
 
                 a {
-                    text-decoration: none;
-                    font-family: Mulish;
-                    font-weight: 500;
-                    font-size: 20px;
+                    @extend %boton;
                     padding: 4%;
-                    color: white;
-                    background-color: #2ba013;
-                    border-radius: 30px;
-                    transition: 300ms;
-                    border: 2px solid #2ba013;
                     &:hover {
-                        background: white;
-                        color: #2ba013;
+                        background: nth($white-color, 3);
+                        color: $primary-color;
                     }
                 }
             }
@@ -79,19 +60,16 @@
     #variedad {
         grid-area: variedad;
         .product-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
+            @extend %flex-center;
             div {
                 margin: 30px;
-                box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+                box-shadow: 5px 5px 10px 1px nth($black-color, 1);
                 width: 364px;
                 transition: 250ms;
 
                 &:hover {
                     scale: 110%;
-                    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.2);
+                    box-shadow: 10px 10px 15px 1px nth($black-color, 2);
                 }
 
                 a {
@@ -108,16 +86,15 @@
                         font-weight: 500;
                         font-size: 20px;
                         margin-left: 10px;
-                        color: black;
+                        color: nth($black-color, 3);
                     }
 
                     p {
+                        @include paragraphs("Mulish", "15px", "none");
                         text-decoration: none;
-                        font-family: Mulish;
                         font-weight: 200;
-                        font-size: 15px;
                         margin-left: 10px;
-                        color: rgb(122, 135, 127);
+                        color: nth($white-color, 2);
                         width: 320px;
                         margin-bottom: 10px;
                     }

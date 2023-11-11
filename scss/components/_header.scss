@@ -1,12 +1,12 @@
 header{
     position: fixed;
     width: 100%;
-    background-color: $color-primario-transparente;
+    background-color: $transparent-primary-color;
     z-index: 1;
-    box-shadow: 2px 2px 10px 1px $color-sombra;
+    box-shadow: 2px 2px 10px 1px nth($black-color, 1);
     .celular-navbar{
-        background-color: $color-primario;
-        color: $color-blanco;
+        background-color: $primary-color;
+        color: nth($white-color, 3);
         height: 70px;
         padding: 10px 12px;
         display: none;
@@ -55,13 +55,13 @@ header{
                 list-style: none;
                 a{
                     text-align: center;
-                    background-color: $color-primario-transparente;
+                    background-color: $transparent-primary-color;
                     text-decoration: none;
-                    color: $color-blanco;
+                    color: nth($white-color, 3);
                     display: block;
                     padding: 10px;
                     &:hover {
-                        background-color: $color-secundario;
+                        background-color: $secondary-color;
                     }
                 }
             }
@@ -71,29 +71,26 @@ header{
         ul{
             padding: 0;
             height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
             margin-bottom: 0;
             .navbar-left{
                 display: flex;
                 padding: 1px 40px 10px 0;
-                border-bottom: 1px solid #ffffff71;
+                border-bottom: 1px solid nth($white-color, 1);
                 li{
                     list-style: none;
                     a{
+                        @include paragraphs(Mulish, 20px, none);
                         text-decoration: none;
-                        font-family: Mulish;
                         font-weight: 500;
-                        font-size: 20px;
-                        color: $color-blanco;
+                        color: nth($white-color, 3);
                         transition: 250ms;
                         padding-bottom: 10px;
                         margin-right: 30px;
                         &:hover {
-                            color: $color-secundario;
+                            color: $secondary-color;
                             /* ! revisar por que en firefox se ve ligeramente diferente que en chrome, opera y brave */
-                            border-bottom: 1px solid $color-secundario;
+                            border-bottom: 1px solid $secondary-color;
                         }
                     }
                 }
@@ -105,18 +102,17 @@ header{
                 li{
                     list-style: none;
                     a{
+                        @include paragraphs(Mulish, 20px, none);
                         text-decoration: none;
-                        font-family: Mulish;
                         font-weight: 500;
-                        font-size: 20px;
-                        color: $color-blanco;
+                        color: nth($white-color, 3);
                         transition: 250ms;
                         padding-bottom: 10px;
                         padding-left: 30px;
                         &:hover {
-                            color: $color-secundario;
+                            color: $secondary-color;
                             /* ! revisar por que en firefox se ve ligeramente diferente que en chrome, opera y brave */
-                            border-bottom: 1px solid $color-secundario;
+                            border-bottom: 1px solid $secondary-color;
                         }
                     }
                 }

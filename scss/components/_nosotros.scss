@@ -11,15 +11,11 @@
     #historia{
         grid-area: historia;
         div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @extend %flex-column;
             margin-top: 30px;
             margin-bottom: 30px;
             p{
-                text-align: center;
-                font-family: Mulish;
-                font-size: 20px;
+                @include paragraphs(Mulish, 20px, center);
                 margin-bottom: 10px;
             }
         }
@@ -28,33 +24,28 @@
     #equipo{
         grid-area: equipo;
         .large-content-div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @extend %flex-column;
             background-image: url("../img/fondo-verduras.jpg");
             padding-bottom: 100px;
             div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-center;
                 width: 70%;
                 img{
                     max-width: 60%;
-                    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.8);
+                    box-shadow: 5px 5px 10px 1px nth($black-color, 2);
                 }
                 div{
                     p{
+                        @include paragraphs(Mulish, 20px, none);
                         text-decoration: none;
-                        font-family: Mulish;
                         font-weight: 500;
-                        font-size: 20px;
-                        color: black;
-                        background-color: rgba(255, 255, 255, 0.466);
+                        color: nth($black-color, 3);
+                        background-color: #ffffff77;
                         padding: 5px;
                         width: 600px;
                         position: relative;
                         left: -30%;
-                        box-shadow: 5px 5px 10px 1px #0000008c;
+                        box-shadow: 5px 5px 10px 1px nth($black-color, 2);
                     }
                 }
             }
@@ -64,15 +55,11 @@
     .pip-section{
         grid-area: pip;
         div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @extend %flex-column;
             margin-top: 30px;
             margin-bottom: 30px;
             p{
-                text-align: center;
-                font-family: Mulish;
-                font-size: 20px;
+                @include paragraphs(Mulish, 20px, center);
                 margin-bottom: 10px;
             }
         }

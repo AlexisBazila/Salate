@@ -10,19 +10,15 @@
     #elaboracion{
         grid-area: elaboracion;
         .right-fusion-paragraph-div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
             img{
                 max-width: 60%;
             }
             .fusion-paragrapfh-div{
                 text-align: center;
                 p{
-                    font-family: Mulish;
-                    font-size: 19px;
+                    @include paragraphs(Mulish, 19px, left);
                     margin: 50px;
-                    text-align: left;
                 }
             }
         }
@@ -31,9 +27,7 @@
     #materia-prima{
         grid-area: matprima;
         .left-fusion-paragraph-div{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
+            @extend %flex-center-reverse;
             align-items: center;
             img{
                 max-width: 60%;
@@ -41,10 +35,8 @@
             .fusion-paragrapfh-div{
                 text-align: center;
                 p{
-                    font-family: Mulish;
-                    font-size: 19px;
+                    @include paragraphs(Mulish, 19px, left);
                     margin: 50px;
-                    text-align: left;
                 }
             }
         }

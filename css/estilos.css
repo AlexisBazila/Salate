@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Bilbo&family=Merriweather:ital@0;1&family=Mulish:wght@200;300;500&family=Signika+Negative:wght@500&display=swap");
+.carousel-item-cards, header .web-navbar ul, .index-main #que-es .right-fusion-paragraph-div, .index-main #variedad .product-div, .nosotros-main #equipo .large-content-div div, .procesos-main #elaboracion .right-fusion-paragraph-div, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nosotros-main #historia div, .nosotros-main #equipo .large-content-div, .nosotros-main .pip-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.index-main #proyectate .left-fusion-paragraph-div, .procesos-main #materia-prima .left-fusion-paragraph-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
+
+.hero .hero-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.boton, .index-main #proyectate .left-fusion-paragraph-div div a, .contacto-main .contact-section div form button {
+  text-decoration: none;
+  font-family: Mulish;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  background-color: #2ba013;
+  border-radius: 30px;
+  transition: 300ms;
+  border: 2px solid #2ba013; }
+
 * {
   margin: 0;
   padding: 0;
@@ -29,9 +61,6 @@ section {
   grid-area: hero; }
   .hero .hero-div {
     padding-left: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 50px; }
     .hero .hero-div .cel-index-img {
       position: absolute;
@@ -73,25 +102,13 @@ section {
   background-color: #2ba013; }
 
 .carousel-item-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2% 10% 2% 10%;
   text-align: center; }
 
 .boton {
-  text-decoration: none;
-  font-family: Mulish;
-  font-weight: 500;
-  font-size: 20px;
-  padding: 4%;
-  color: white;
-  background-color: #2ba013;
-  border-radius: 30px;
-  transition: 300ms;
-  border: 2px solid #2ba013; }
+  padding: 4%; }
   .boton:hover {
-    background: white;
+    background: #fff;
     color: #2ba013; }
 
 .card {
@@ -99,12 +116,15 @@ section {
   height: 400px;
   margin: 5px; }
 
+.carousel-indicators {
+  display: none; }
+
 header {
   position: fixed;
   width: 100%;
   background-color: #2ba013ec;
   z-index: 1;
-  box-shadow: 2px 2px 10px 1px #0000009d; }
+  box-shadow: 2px 2px 10px 1px #00000033; }
   header .celular-navbar {
     background-color: #2ba013;
     color: #fff;
@@ -160,9 +180,6 @@ header {
   header .web-navbar ul {
     padding: 0;
     height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 0; }
     header .web-navbar ul .navbar-left {
       display: flex;
@@ -171,10 +188,11 @@ header {
       header .web-navbar ul .navbar-left li {
         list-style: none; }
         header .web-navbar ul .navbar-left li a {
-          text-decoration: none;
           font-family: Mulish;
-          font-weight: 500;
           font-size: 20px;
+          text-align: none;
+          text-decoration: none;
+          font-weight: 500;
           color: #fff;
           transition: 250ms;
           padding-bottom: 10px;
@@ -190,10 +208,11 @@ header {
       header .web-navbar ul .navbar-right li {
         list-style: none; }
         header .web-navbar ul .navbar-right li a {
-          text-decoration: none;
           font-family: Mulish;
-          font-weight: 500;
           font-size: 20px;
+          text-align: none;
+          text-decoration: none;
+          font-weight: 500;
           color: #fff;
           transition: 250ms;
           padding-bottom: 10px;
@@ -218,84 +237,63 @@ header {
   grid-template-areas: "hero hero hero" ". que-es ." ". proyectate ." ". variedad ."; }
   .index-main #que-es {
     grid-area: que-es; }
-    .index-main #que-es .right-fusion-paragraph-div {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .index-main #que-es .right-fusion-paragraph-div img {
-        max-width: 60%; }
-      .index-main #que-es .right-fusion-paragraph-div div {
-        text-align: center; }
-        .index-main #que-es .right-fusion-paragraph-div div p {
-          font-family: Mulish;
-          font-size: 19px;
-          margin: 50px;
-          text-align: left; }
+    .index-main #que-es .right-fusion-paragraph-div img {
+      max-width: 60%; }
+    .index-main #que-es .right-fusion-paragraph-div div {
+      text-align: center; }
+      .index-main #que-es .right-fusion-paragraph-div div p {
+        font-family: Mulish;
+        font-size: 19px;
+        text-align: left;
+        margin: 50px; }
   .index-main #proyectate {
     grid-area: proyectate; }
-    .index-main #proyectate .left-fusion-paragraph-div {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center; }
-      .index-main #proyectate .left-fusion-paragraph-div img {
-        max-width: 60%; }
-      .index-main #proyectate .left-fusion-paragraph-div div {
-        text-align: center; }
-        .index-main #proyectate .left-fusion-paragraph-div div p {
-          font-family: Mulish;
-          font-size: 19px;
-          margin: 50px;
-          text-align: left; }
-        .index-main #proyectate .left-fusion-paragraph-div div a {
+    .index-main #proyectate .left-fusion-paragraph-div img {
+      max-width: 60%; }
+    .index-main #proyectate .left-fusion-paragraph-div div {
+      text-align: center; }
+      .index-main #proyectate .left-fusion-paragraph-div div p {
+        font-family: Mulish;
+        font-size: 19px;
+        text-align: left;
+        margin: 50px; }
+      .index-main #proyectate .left-fusion-paragraph-div div a {
+        padding: 4%; }
+        .index-main #proyectate .left-fusion-paragraph-div div a:hover {
+          background: #fff;
+          color: #2ba013; }
+  .index-main #variedad {
+    grid-area: variedad; }
+    .index-main #variedad .product-div div {
+      margin: 30px;
+      box-shadow: 5px 5px 10px 1px #00000033;
+      width: 364px;
+      transition: 250ms; }
+      .index-main #variedad .product-div div:hover {
+        scale: 110%;
+        box-shadow: 10px 10px 15px 1px #0000009d; }
+      .index-main #variedad .product-div div a {
+        text-decoration: none; }
+        .index-main #variedad .product-div div a img {
+          margin-bottom: 4px;
+          width: 100%; }
+        .index-main #variedad .product-div div a h4 {
           text-decoration: none;
           font-family: Mulish;
           font-weight: 500;
           font-size: 20px;
-          padding: 4%;
-          color: white;
-          background-color: #2ba013;
-          border-radius: 30px;
-          transition: 300ms;
-          border: 2px solid #2ba013; }
-          .index-main #proyectate .left-fusion-paragraph-div div a:hover {
-            background: white;
-            color: #2ba013; }
-  .index-main #variedad {
-    grid-area: variedad; }
-    .index-main #variedad .product-div {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .index-main #variedad .product-div div {
-        margin: 30px;
-        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
-        width: 364px;
-        transition: 250ms; }
-        .index-main #variedad .product-div div:hover {
-          scale: 110%;
-          box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.2); }
-        .index-main #variedad .product-div div a {
-          text-decoration: none; }
-          .index-main #variedad .product-div div a img {
-            margin-bottom: 4px;
-            width: 100%; }
-          .index-main #variedad .product-div div a h4 {
-            text-decoration: none;
-            font-family: Mulish;
-            font-weight: 500;
-            font-size: 20px;
-            margin-left: 10px;
-            color: black; }
-          .index-main #variedad .product-div div a p {
-            text-decoration: none;
-            font-family: Mulish;
-            font-weight: 200;
-            font-size: 15px;
-            margin-left: 10px;
-            color: #7a877f;
-            width: 320px;
-            margin-bottom: 10px; }
+          margin-left: 10px;
+          color: #000; }
+        .index-main #variedad .product-div div a p {
+          font-family: "Mulish";
+          font-size: "15px";
+          text-align: "none";
+          text-decoration: none;
+          font-weight: 200;
+          margin-left: 10px;
+          color: #7a877f;
+          width: 320px;
+          margin-bottom: 10px; }
 
 .contacto-main {
   display: grid;
@@ -320,20 +318,20 @@ header {
         margin: 15px; }
         .contacto-main .contact-section div form .input-div input {
           font-family: inherit;
-          color: black;
+          color: #000;
           padding: 10px;
           border: none;
           border-radius: 4px;
-          outline: 2px solid black;
+          outline: 2px solid #000;
           background-color: transparent;
           transition: outline-color 500ms;
           width: 450px; }
-          .contacto-main .contact-section div form .input-div input:focus + .input-label,
-          .contacto-main .contact-section div form .input-div input:valid + .input-label {
+          .contacto-main .contact-section div form .input-div input:focus + label,
+          .contacto-main .contact-section div form .input-div input:valid + label {
             padding-inline: 5px;
             translate: 10px -10px;
             scale: 0.8;
-            background-color: white;
+            background-color: #fff;
             color: #2ba013;
             font-weight: 700; }
           .contacto-main .contact-section div form .input-div input:is(:focus, :valid) {
@@ -350,20 +348,20 @@ header {
         margin: 15px; }
         .contacto-main .contact-section div form .textarea-div textarea {
           font: inherit;
-          color: black;
+          color: #000;
           padding: 10px;
           border: none;
           border-radius: 4px;
-          outline: 2px double black;
+          outline: 2px double #000;
           background-color: transparent;
           transition: outline-color 500ms;
           width: 450px; }
-          .contacto-main .contact-section div form .textarea-div textarea:focus + .textarea-label,
-          .contacto-main .contact-section div form .textarea-div textarea:valid + .textarea-label {
+          .contacto-main .contact-section div form .textarea-div textarea:focus + label,
+          .contacto-main .contact-section div form .textarea-div textarea:valid + label {
             padding-inline: 5px;
             translate: 10px -10px;
             scale: 0.8;
-            background-color: white;
+            background-color: #fff;
             color: #2ba013;
             font-weight: 700; }
           .contacto-main .contact-section div form .textarea-div textarea:is(:focus, :valid) {
@@ -373,30 +371,21 @@ header {
           top: 0;
           left: 0;
           translate: 10px 10px;
-          color: black;
+          color: #000;
           transition: translate 500ms, scale 500ms; }
       .contacto-main .contact-section div form button {
-        text-decoration: none;
-        font-family: Mulish;
-        font-weight: 500;
-        font-size: 20px;
-        padding: 15px;
-        color: white;
-        background-color: #2ba013;
-        border-radius: 30px;
-        transition: 300ms;
-        border: 2px solid #2ba013; }
+        padding: 15px; }
         .contacto-main .contact-section div form button:hover {
-          background: white;
+          background: #fff;
           color: #2ba013; }
   .contacto-main .map-section {
     grid-area: mapa;
     background-image: url("../img/fondo-verduras.jpg");
     margin-bottom: 50px; }
     .contacto-main .map-section div {
-      background-color: white; }
+      background-color: #fff; }
     .contacto-main .map-section iframe {
-      box-shadow: 5px 5px 10px 1px #0000008c; }
+      box-shadow: 5px 5px 10px 1px #0000009d; }
   .contacto-main .comercios-section {
     display: flex;
     flex-direction: column;
@@ -414,56 +403,45 @@ header {
   .nosotros-main #historia {
     grid-area: historia; }
     .nosotros-main #historia div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-top: 30px;
       margin-bottom: 30px; }
       .nosotros-main #historia div p {
-        text-align: center;
         font-family: Mulish;
         font-size: 20px;
+        text-align: center;
         margin-bottom: 10px; }
   .nosotros-main #equipo {
     grid-area: equipo; }
     .nosotros-main #equipo .large-content-div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       background-image: url("../img/fondo-verduras.jpg");
       padding-bottom: 100px; }
       .nosotros-main #equipo .large-content-div div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 70%; }
         .nosotros-main #equipo .large-content-div div img {
           max-width: 60%;
-          box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.8); }
+          box-shadow: 5px 5px 10px 1px #0000009d; }
         .nosotros-main #equipo .large-content-div div div p {
-          text-decoration: none;
           font-family: Mulish;
-          font-weight: 500;
           font-size: 20px;
-          color: black;
-          background-color: rgba(255, 255, 255, 0.466);
+          text-align: none;
+          text-decoration: none;
+          font-weight: 500;
+          color: #000;
+          background-color: #ffffff77;
           padding: 5px;
           width: 600px;
           position: relative;
           left: -30%;
-          box-shadow: 5px 5px 10px 1px #0000008c; }
+          box-shadow: 5px 5px 10px 1px #0000009d; }
   .nosotros-main .pip-section {
     grid-area: pip; }
     .nosotros-main .pip-section div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-top: 30px;
       margin-bottom: 30px; }
       .nosotros-main .pip-section div p {
-        text-align: center;
         font-family: Mulish;
         font-size: 20px;
+        text-align: center;
         margin-bottom: 10px; }
 
 .procesos-main {
@@ -473,25 +451,18 @@ header {
   grid-template-areas: "hero hero hero" ". elaboracion ." ". matprima ."; }
   .procesos-main #elaboracion {
     grid-area: elaboracion; }
-    .procesos-main #elaboracion .right-fusion-paragraph-div {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .procesos-main #elaboracion .right-fusion-paragraph-div img {
-        max-width: 60%; }
-      .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div {
-        text-align: center; }
-        .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
-          font-family: Mulish;
-          font-size: 19px;
-          margin: 50px;
-          text-align: left; }
+    .procesos-main #elaboracion .right-fusion-paragraph-div img {
+      max-width: 60%; }
+    .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div {
+      text-align: center; }
+      .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
+        font-family: Mulish;
+        font-size: 19px;
+        text-align: left;
+        margin: 50px; }
   .procesos-main #materia-prima {
     grid-area: matprima; }
     .procesos-main #materia-prima .left-fusion-paragraph-div {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
       align-items: center; }
       .procesos-main #materia-prima .left-fusion-paragraph-div img {
         max-width: 60%; }
@@ -500,8 +471,8 @@ header {
         .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
           font-family: Mulish;
           font-size: 19px;
-          margin: 50px;
-          text-align: left; }
+          text-align: left;
+          margin: 50px; }
 
 .productos-main {
   display: grid;
@@ -520,7 +491,8 @@ header {
         font-size: 20px;
         font-weight: 200;
         padding-left: 30px;
-        padding-right: 30px; }
+        padding-right: 30px;
+        color: #F26D1F; }
       .productos-main .product-section .left-product-div div h3 {
         font-family: Merriweather;
         font-size: 17px;
@@ -529,7 +501,7 @@ header {
         padding-right: 30px;
         margin-left: 30px;
         width: 400px;
-        color: #7a877f; }
+        color: nht(#ffffff71, #7a877f, #fff, 2); }
     .productos-main .product-section .right-product-div {
       display: flex;
       flex-direction: row-reverse;
@@ -541,7 +513,8 @@ header {
         font-size: 20px;
         font-weight: 200;
         padding-left: 30px;
-        padding-right: 30px; }
+        padding-right: 30px;
+        color: #F26D1F; }
       .productos-main .product-section .right-product-div div h3 {
         font-family: Merriweather;
         font-size: 17px;
@@ -550,14 +523,11 @@ header {
         padding-right: 30px;
         margin-left: 30px;
         width: 400px;
-        color: #7a877f; }
+        color: nht(#ffffff71, #7a877f, #fff, 2); }
 
 footer {
   background: linear-gradient(#2ba01391, #2ba01391), url("../img/vectorlechuga.jpg");
   box-shadow: 0 -2px 20px 1px #00000079;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 10px; }
   footer .box-footer-div {
     width: 70%; }
@@ -638,10 +608,14 @@ footer {
 @media screen and (max-width: 1440px) {
   .index-main #que-es .right-fusion-paragraph-div {
     flex-direction: column; }
+    .index-main #que-es .right-fusion-paragraph-div img {
+      max-width: 80%; }
     .index-main #que-es .right-fusion-paragraph-div div p {
       text-align: center; }
   .index-main #proyectate .left-fusion-paragraph-div {
     flex-direction: column; }
+    .index-main #proyectate .left-fusion-paragraph-div img {
+      max-width: 80%; }
     .index-main #proyectate .left-fusion-paragraph-div div p {
       text-align: center; }
     .index-main #proyectate .left-fusion-paragraph-div div a {
@@ -654,10 +628,14 @@ footer {
     background-image: url(../img/salad-banner4.jpg); }
   .procesos-main #elaboracion .right-fusion-paragraph-div {
     flex-direction: column; }
+    .procesos-main #elaboracion .right-fusion-paragraph-div img {
+      max-width: 80%; }
     .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
       text-align: center; }
   .procesos-main #materia-prima .left-fusion-paragraph-div {
     flex-direction: column; }
+    .procesos-main #materia-prima .left-fusion-paragraph-div img {
+      max-width: 80%; }
     .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
       text-align: center; }
   .productos-main .product-section {
@@ -685,21 +663,6 @@ footer {
         padding-right: 0;
         margin-left: 0;
         width: 100%; }
-  footer .box-footer-div .content-footer-div div ul .title-footer-li a {
-    font-size: 26px; }
-  footer .box-footer-div .content-footer-div div ul .item-footer-li a {
-    font-size: 20px; }
-  footer .box-footer-div .content-footer-div div div ul .title-footer-li a {
-    font-size: 26px; }
-  footer .box-footer-div .content-footer-div div div ul li p {
-    font-size: 18px; }
-  .hero .hero-div div h1 {
-    font-size: 40px; }
-  .hero .hero-div div h2 {
-    font-size: 60px; } }
-
-/*1300px*/
-@media screen and (max-width: 1300px) {
   footer .box-footer-div .content-footer-div {
     margin-bottom: 10px; }
     footer .box-footer-div .content-footer-div div ul .title-footer-li {
@@ -712,12 +675,16 @@ footer {
       font-size: 21px; }
     footer .box-footer-div .content-footer-div div div ul li p {
       font-size: 15px; }
-      footer .box-footer-div .content-footer-div div div ul li p i {
-        font-size: 20px; }
+    footer .box-footer-div .content-footer-div div div ul li i {
+      font-size: 20px; }
     footer .box-footer-div .content-footer-div div .media-footer-div ul li a i {
       margin-top: 5px;
       margin-right: 30px;
-      font-size: 30px; } }
+      font-size: 30px; }
+  .hero .hero-div div h1 {
+    font-size: 40px; }
+  .hero .hero-div div h2 {
+    font-size: 60px; } }
 
 /*1100px*/
 @media screen and (max-width: 1100px) {
@@ -768,26 +735,23 @@ footer {
       padding-top: 10%;
       margin-bottom: 2%;
       position: static; }
+    .hero .hero-div div h1 {
+      font-size: 35px; }
+    .hero .hero-div div h2 {
+      font-size: 55px; }
     .hero .hero-div .web-index-img {
       visibility: hidden;
       position: absolute; }
+  .carusel {
+    scale: 90%; }
   section {
     margin-bottom: 5%; }
-  .carusel {
-    scale: 90%; } }
-
-/*1010px*/
-@media screen and (max-width: 1010px) {
-  .hero .hero-div div h1 {
-    font-size: 35px; }
-  .hero .hero-div div h2 {
-    font-size: 55px; }
-  section .title-div {
-    padding: 15px; }
-    section .title-div h2 {
-      font-size: 25px; }
-    section .title-div h3 {
-      font-size: 25px; } }
+    section .title-div {
+      padding: 15px; }
+      section .title-div h2 {
+        font-size: 25px; }
+      section .title-div h3 {
+        font-size: 25px; } }
 
 /*950px*/
 @media screen and (max-width: 950px) {
@@ -797,30 +761,29 @@ footer {
     display: none; }
   .index-main {
     grid-template-columns: 2% 96% 2%; }
+    .index-main #variedad .product-div div {
+      width: 200px; }
+      .index-main #variedad .product-div div a p {
+        width: 200px; }
   .contacto-main {
     grid-template-columns: 2% 96% 2%; }
+    .contacto-main .contact-section {
+      margin-top: 40px; }
+      .contacto-main .contact-section div form {
+        width: 310px; }
+        .contacto-main .contact-section div form .input-div input {
+          width: 280px; }
+        .contacto-main .contact-section div form .textarea-div textarea {
+          width: 280px; }
   .nosotros-main {
     grid-template-columns: 2% 96% 2%; }
     .nosotros-main .pip-section div iframe {
-      width: 600px;
-      height: 300px; }
+      width: 90vw;
+      height: 60vh; }
   .procesos-main {
     grid-template-columns: 2% 96% 2%; }
   .productos-main {
     grid-template-columns: 2% 96% 2%; }
-  .carusel {
-    scale: 80%; } }
-
-/*800px*/
-@media screen and (max-width: 800px) {
-  .index-main .hero .hero-div .cel-index-img {
-    padding-top: 15%; }
-  .nosotros-main .hero .hero-div .cel-index-img {
-    padding-top: 15%; }
-  .procesos-main .hero .hero-div .cel-index-img {
-    padding-top: 15%; }
-  .productos-main .hero .hero-div .cel-index-img {
-    padding-top: 15%; }
   footer .box-footer-div .content-footer-div {
     display: flex;
     flex-direction: column;
@@ -848,116 +811,26 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .hero .hero-div .cel-index-img {
+    padding-top: 20%; }
+  .hero .hero-div div h1 {
+    font-size: 25px; }
+  .hero .hero-div div h2 {
+    font-size: 45px; }
   .carusel {
-    scale: 60%; } }
-
-/*600px*/
-@media screen and (max-width: 600px) {
-  .index-main .hero .hero-div .cel-index-img {
-    padding-top: 20%; }
-  .index-main #variedad .product-div div {
-    width: 200px; }
-    .index-main #variedad .product-div div a p {
-      width: 200px; }
-  .nosotros-main .hero .hero-div .cel-index-img {
-    padding-top: 20%; }
-  .nosotros-main #equipo .large-content-div div div p {
-    font-size: 16px; }
-  .nosotros-main .pip-section div iframe {
-    width: 70%; }
-  .procesos-main .hero .hero-div .cel-index-img {
-    padding-top: 20%; }
-  .productos-main .hero .hero-div .cel-index-img {
-    padding-top: 20%; }
-  .carusel {
-    scale: 50%; } }
+    scale: 50%; }
+  section .title-div img {
+    width: 70px; }
+  section .title-div h2 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  section .title-div h3 {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .card {
+    margin: 1px; } }
 
 /*500px*/
 @media screen and (max-width: 500px) {
-  .index-main .hero .hero-div div h1 {
-    font-size: 25px; }
-  .index-main .hero .hero-div div h2 {
-    font-size: 45px; }
-  .index-main section .title-div img {
-    width: 70px; }
-  .index-main section .title-div h2 {
-    font-size: 20px;
-    margin-bottom: 10px; }
-  .index-main section .title-div h3 {
-    font-size: 20px;
-    margin-bottom: 15px; }
-  .index-main #que-es .right-fusion-paragraph-div img {
-    max-width: 80%; }
-  .index-main #proyectate .left-fusion-paragraph-div img {
-    max-width: 80%; }
-  .contacto-main section {
-    margin-top: 40px; }
-    .contacto-main section .title-div img {
-      width: 70px; }
-    .contacto-main section .title-div h2 {
-      font-size: 20px;
-      margin-bottom: 10px; }
-    .contacto-main section .title-div h3 {
-      font-size: 20px;
-      margin-bottom: 15px; }
-  .contacto-main .contact-section {
-    margin-top: 40px; }
-    .contacto-main .contact-section div form {
-      width: 310px; }
-      .contacto-main .contact-section div form .input-div input {
-        width: 280px; }
-      .contacto-main .contact-section div form .textarea-div textarea {
-        width: 280px; }
-  .nosotros-main section .title-div img {
-    width: 70px; }
-  .nosotros-main section .title-div h2 {
-    font-size: 20px;
-    margin-bottom: 10px; }
-  .nosotros-main section .title-div h3 {
-    font-size: 20px;
-    margin-bottom: 15px; }
-  .nosotros-main .hero .hero-div div h1 {
-    font-size: 25px; }
-  .nosotros-main .hero .hero-div div h2 {
-    font-size: 45px; }
-  .procesos-main .hero .hero-div div h1 {
-    font-size: 25px; }
-  .procesos-main .hero .hero-div div h2 {
-    font-size: 45px; }
-  .procesos-main section .title-div img {
-    width: 70px; }
-  .procesos-main section .title-div h2 {
-    font-size: 20px;
-    margin-bottom: 10px; }
-  .procesos-main section .title-div h3 {
-    font-size: 20px;
-    margin-bottom: 15px; }
-  .procesos-main #elaboracion .right-fusion-paragraph-div img {
-    max-width: 80%; }
-  .procesos-main #materia-prima .left-fusion-paragraph-div img {
-    max-width: 80%; }
-  .productos-main section .title-div img {
-    width: 70px; }
-  .productos-main section .title-div h2 {
-    font-size: 20px;
-    margin-bottom: 10px; }
-  .productos-main section .title-div h3 {
-    font-size: 20px;
-    margin-bottom: 15px; }
-  .productos-main .hero .hero-div div h1 {
-    font-size: 25px; }
-  .productos-main .hero .hero-div div h2 {
-    font-size: 45px; } }
-
-/*400px*/
-@media screen and (max-width: 400px) {
-  .index-main .hero .hero-div .cel-index-img {
-    padding-top: 25%; }
-  .nosotros-main .hero .hero-div .cel-index-img {
-    padding-top: 25%; }
-  .nosotros-main .pip-section div iframe {
-    height: 70%; }
-  .procesos-main .hero .hero-div .cel-index-img {
-    padding-top: 25%; }
   .carusel {
     scale: 40%; } }
