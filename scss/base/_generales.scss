@@ -65,6 +65,7 @@ section {
     }
 }
 
+// Clases iconos importados
 .bxl-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
@@ -83,6 +84,7 @@ section {
     color: $secondary-color;
 }  
 
+// Clases boostrap
 .card-body {
     margin: 5%;
 }
@@ -119,3 +121,46 @@ section {
 .carousel-indicators{
 display: none;
 }
+
+// Animaciones de entrada de contenido
+// Terminar de pulir antes de la entrega final y darle un efecto similar a la herosection
+// .entrance-left{
+//     animation-duration: 1s;
+//     animation-delay: 0.5s;
+//     view-timeline-name: --image;
+//     view-timeline-axis: block;
+//     animation-timeline: --image;
+//     animation-name: in-left;
+//     animation-range: entry 5% cover 30%;
+//     animation-fill-mode:both;
+// }
+// .entrance-right{
+//     animation-duration: 1s;
+//     animation-delay: 0.5s;
+//     view-timeline-name: --image;
+//     view-timeline-axis: block;
+//     animation-timeline: --image;
+//     animation-name: in-right;
+//     animation-range: entry 5% cover 30%;
+//     animation-fill-mode:both;
+// }
+// @keyframes in-left{
+//     from {
+//         opacity: 0;
+//         transform: translatex(-200px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: translatex(0);
+//     }
+// }
+// @keyframes in-right{
+//     0% {
+//         opacity: 0;
+//         transform: translatex(350px);
+//     }
+//     100%{
+//         opacity: 1;
+//         transform: translatex(0);
+//     }
+// }
