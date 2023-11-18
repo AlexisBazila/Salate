@@ -31,7 +31,7 @@
                 @extend %flex-center;
                 width: 70%;
                 img{
-                    max-width: 60%;
+                    max-width: 62%;
                     box-shadow: 5px 5px 10px 1px nth($black-color, 2);
                 }
                 div{
@@ -61,6 +61,7 @@
             p{
                 @include paragraphs(Mulish, 20px, center);
                 margin-bottom: 10px;
+                padding: 10px;
             }
         }
     }

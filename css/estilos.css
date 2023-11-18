@@ -154,6 +154,14 @@ section {
     opacity: 1;
     transform: translatex(0); } }
 
+@keyframes in-right-small {
+  from {
+    opacity: 0;
+    transform: translatex(40px); }
+  to {
+    opacity: 1;
+    transform: translatex(0); } }
+
 header {
   position: fixed;
   width: 100%;
@@ -454,7 +462,7 @@ header {
       .nosotros-main #equipo .large-content-div div {
         width: 70%; }
         .nosotros-main #equipo .large-content-div div img {
-          max-width: 60%;
+          max-width: 62%;
           box-shadow: 5px 5px 10px 1px #0000009d; }
         .nosotros-main #equipo .large-content-div div div p {
           font-family: Mulish;
@@ -478,7 +486,8 @@ header {
         font-family: Mulish;
         font-size: 20px;
         text-align: center;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding: 10px; }
 
 .procesos-main {
   display: grid;
@@ -642,18 +651,21 @@ footer {
 
 /*1440px*/
 @media screen and (max-width: 1400px) {
-  .index-main #que-es .right-fusion-paragraph-div {
-    flex-direction: column; }
-    .index-main #que-es .right-fusion-paragraph-div img {
-      max-width: 80%; }
-    .index-main #que-es .right-fusion-paragraph-div div p {
-      text-align: center; }
+  .index-main #que-es .right-fusion-paragraph-div img {
+    max-width: 50%; }
+  .index-main #que-es .right-fusion-paragraph-div div p {
+    margin: 20px;
+    width: 100%; }
   .index-main #proyectate .left-fusion-paragraph-div {
     flex-direction: column; }
     .index-main #proyectate .left-fusion-paragraph-div img {
-      max-width: 80%; }
+      max-width: 100%; }
     .index-main #proyectate .left-fusion-paragraph-div div p {
+      margin: 0;
+      padding-top: 30px;
       text-align: center; }
+      .index-main #proyectate .left-fusion-paragraph-div div p:nth-child(2) {
+        margin-bottom: 60px; }
     .index-main #proyectate .left-fusion-paragraph-div div a {
       padding: 2%; }
   .index-main #variedad .product-div div {
@@ -662,16 +674,15 @@ footer {
   .contacto-main .contact-section {
     width: 100%;
     background-image: url(../img/salad-banner4.jpg); }
-  .procesos-main #elaboracion .right-fusion-paragraph-div {
-    flex-direction: column; }
-    .procesos-main #elaboracion .right-fusion-paragraph-div img {
-      max-width: 80%; }
-    .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
-      text-align: center; }
+  .procesos-main #elaboracion .right-fusion-paragraph-div img {
+    max-width: 50%; }
+  .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
+    margin: 20px;
+    width: 100%; }
   .procesos-main #materia-prima .left-fusion-paragraph-div {
     flex-direction: column; }
     .procesos-main #materia-prima .left-fusion-paragraph-div img {
-      max-width: 80%; }
+      max-width: 100%; }
     .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
       text-align: center; }
   .productos-main .product-section {
@@ -721,15 +732,21 @@ footer {
     font-size: 40px; }
   .hero .hero-div div h2 {
     font-size: 60px; }
-  .entrance-left {
-    animation-name: none; }
   .entrance-right {
-    animation-name: none; } }
+    animation-name: in-right-small; } }
 
 /*1100px*/
 @media screen and (max-width: 1100px) {
   header .web-navbar {
     background-color: #2ba013; }
+  .index-main #que-es .right-fusion-paragraph-div {
+    flex-direction: column; }
+    .index-main #que-es .right-fusion-paragraph-div img {
+      max-width: 100%; }
+    .index-main #que-es .right-fusion-paragraph-div div p {
+      margin: 0;
+      padding-top: 30px;
+      text-align: center; }
   .index-main #variedad .product-div {
     flex-wrap: wrap; }
   .contacto-main .contact-section {
@@ -756,13 +773,25 @@ footer {
         .nosotros-main #equipo .large-content-div div div p {
           text-align: center;
           background-color: rgba(255, 255, 255, 0.849);
-          padding: 0;
+          padding: 2%;
           width: 100%;
           margin-top: 15px;
           position: static;
           left: 0; }
   .nosotros-main .pip-section div iframe {
     width: 98%; }
+  .procesos-main #elaboracion .right-fusion-paragraph-div {
+    flex-direction: column; }
+    .procesos-main #elaboracion .right-fusion-paragraph-div img {
+      max-width: 100%; }
+    .procesos-main #elaboracion .right-fusion-paragraph-div .fusion-paragrapfh-div p {
+      text-align: center; }
+  .procesos-main #materia-prima .left-fusion-paragraph-div {
+    flex-direction: column; }
+    .procesos-main #materia-prima .left-fusion-paragraph-div img {
+      max-width: 100%; }
+    .procesos-main #materia-prima .left-fusion-paragraph-div .fusion-paragrapfh-div p {
+      text-align: center; }
   footer .box-footer-div {
     width: 98%; }
   .hero .hero-div {
@@ -791,7 +820,11 @@ footer {
       section .title-div h2 {
         font-size: 25px; }
       section .title-div h3 {
-        font-size: 25px; } }
+        font-size: 25px; }
+  .entrance-left {
+    animation-name: none; }
+  .entrance-right {
+    animation-name: none; } }
 
 /*950px*/
 @media screen and (max-width: 950px) {
@@ -817,6 +850,10 @@ footer {
           width: 280px; }
   .nosotros-main {
     grid-template-columns: 2% 96% 2%; }
+    .nosotros-main #equipo .large-content-div div {
+      flex-direction: column; }
+      .nosotros-main #equipo .large-content-div div div p {
+        padding: 3%; }
     .nosotros-main .pip-section div iframe {
       width: 90vw;
       height: 60vh; }
