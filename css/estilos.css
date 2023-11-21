@@ -92,7 +92,11 @@ section {
   color: #A1137C; }
 
 .card-body {
-  margin: 5%; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%; }
 
 .carousel-control-prev-icon {
   background-color: #2ba013; }
@@ -366,7 +370,7 @@ header {
           padding: 10px;
           border: none;
           border-radius: 4px;
-          outline: 2px solid #000;
+          outline: 2px solid #A1137C;
           background-color: transparent;
           transition: outline-color 500ms;
           width: 450px; }
@@ -376,10 +380,10 @@ header {
             translate: 10px -10px;
             scale: 0.8;
             background-color: #fff;
-            color: #2ba013;
+            color: #A1137C;
             font-weight: 700; }
           .contacto-main .contact-section div form .input-div input:is(:focus, :valid) {
-            border: 5px solid #2ba013; }
+            border: 5px solid #A1137C; }
         .contacto-main .contact-section div form .input-div label {
           position: absolute;
           top: 0;
@@ -396,7 +400,7 @@ header {
           padding: 10px;
           border: none;
           border-radius: 4px;
-          outline: 2px double #000;
+          outline: 2px double #A1137C;
           background-color: transparent;
           transition: outline-color 500ms;
           width: 450px; }
@@ -406,10 +410,10 @@ header {
             translate: 10px -10px;
             scale: 0.8;
             background-color: #fff;
-            color: #2ba013;
+            color: #A1137C;
             font-weight: 700; }
           .contacto-main .contact-section div form .textarea-div textarea:is(:focus, :valid) {
-            border: 5px solid #2ba013; }
+            border: 5px solid #A1137C; }
         .contacto-main .contact-section div form .textarea-div label {
           position: absolute;
           top: 0;
@@ -689,7 +693,8 @@ footer {
     grid-area: product; }
     .productos-main .product-section .left-product-div {
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 0; }
       .productos-main .product-section .left-product-div div h2 {
         text-align: center;
         width: 100%; }
@@ -700,7 +705,8 @@ footer {
         margin-left: 0;
         width: 100%; }
     .productos-main .product-section .right-product-div {
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 0; }
       .productos-main .product-section .right-product-div div h2 {
         text-align: center;
         width: 100%; }
@@ -895,7 +901,7 @@ footer {
   .hero .hero-div div h2 {
     font-size: 45px; }
   .carusel {
-    scale: 50%; }
+    scale: 58%; }
   section .title-div img {
     width: 70px; }
   section .title-div h2 {
@@ -905,7 +911,12 @@ footer {
     font-size: 20px;
     margin-bottom: 15px; }
   .card {
-    margin: 1px; } }
+    margin: 1px; }
+  .card-text {
+    padding: 5px;
+    font-size: 20px; }
+  .card {
+    height: 450px; } }
 
 /*500px*/
 @media screen and (max-width: 500px) {

@@ -84,8 +84,12 @@ section {
 }  
 
 // Clases boostrap
-.card-body {
-    margin: 5%;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
 }
 
 .carousel-control-prev-icon {

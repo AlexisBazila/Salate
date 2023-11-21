@@ -99,7 +99,7 @@
             .left-product-div {
                 flex-direction: column;
                 align-items: center;
-
+                margin-bottom: 0;
                 div {
                     h2 {
                         text-align: center;
@@ -118,7 +118,7 @@
 
             .right-product-div {
                 flex-direction: column;
-
+                margin-bottom: 0;
                 div {
                     h2 {
                         text-align: center;
@@ -586,7 +586,7 @@
     }
 
     .carusel {
-        scale: 50%
+        scale: 58%;
     }
 
     section {
@@ -611,6 +611,13 @@
     .card {
         margin: 1px;
     }
+    .card-text{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .card{
+        height: 450px;
+    }
 }
 
 /*500px*/
@@ -620,9 +627,12 @@
     .carusel {
         scale: 40%;
     }
+
+
+
 }
 
 
 // NOTAS
 // -En las mediaqueries los elementos que dicen general son elementos que se repiten en todas las paginas, por eso estan declarados por fuera de los main una sola vez
-// -De 9 mediaqueries pude reducir a 4, podria bajar a 3 pero el carrousel de productos de boostrap me imposibilita un poco esto puesto que si aplico un porcentaje muy bajo en la mediaquerie de 950 me queda muy pequeño en comparacion con el resto de la pagina.
+// -De 9 mediaqueries pude reducir a 4, podría bajar a 3 pero el carrousel de productos de boostrap me imposibilita un poco esto puesto que si aplico un porcentaje muy bajo en la mediaquerie de 950 me queda muy pequeño en comparacion con el resto de la pagina.
