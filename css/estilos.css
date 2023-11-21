@@ -178,7 +178,7 @@ header {
     height: 70px;
     padding: 10px 12px;
     display: none; }
-    header .celular-navbar img {
+    header .celular-navbar a img {
       height: 100%; }
     header .celular-navbar input {
       position: absolute;
@@ -649,7 +649,7 @@ footer {
       align-items: end; }
       footer .box-footer-div .copy-footer-div img {
         width: 30%; }
-      footer .box-footer-div .copy-footer-div p {
+      footer .box-footer-div .copy-footer-div div p {
         margin-top: 10px;
         color: #fff; }
 
@@ -894,6 +894,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    footer .box-footer-div .copy-footer-div div {
+      text-align: center; }
   .hero .hero-div .cel-index-img {
     padding-top: 20%; }
   .hero .hero-div div h1 {
