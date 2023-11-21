@@ -30,7 +30,7 @@
                         padding: 10px;
                         border: none;
                         border-radius: 4px;
-                        outline: 2px solid nth($black-color, 3);
+                        outline: 2px solid $secondary-color;
                         background-color: transparent;
                         transition: outline-color 500ms;
                         width: 450px;
@@ -40,11 +40,11 @@
                             translate: 10px -10px;
                             scale: 0.8;
                             background-color: nth($white-color, 3 );
-                            color: $primary-color;
+                            color: $secondary-color;
                             font-weight: 700;
                         }
                         &:is(:focus, :valid) {
-                            border: 5px solid $primary-color;
+                            border: 5px solid $secondary-color;
                         }                                              
                     }
                     label{
@@ -65,7 +65,7 @@
                         padding: 10px;
                         border: none;
                         border-radius: 4px;
-                        outline: 2px double nth($black-color, 3);
+                        outline: 2px double $secondary-color;
                         background-color: transparent;
                         transition: outline-color 500ms;
                         width: 450px;
@@ -75,12 +75,12 @@
                             translate: 10px -10px;
                             scale: 0.8;
                             background-color: nth($white-color, 3);
-                            color: $primary-color;
+                            color: $secondary-color;
                             font-weight: 700;
                         }
                         
                         &:is(:focus, :valid) {
-                            border: 5px solid $primary-color;
+                            border: 5px solid $secondary-color;
                         }                      
                     }
                     label{
